@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Noto_Sans } from "next/font/google";
 import "./globals.css";
 import "@radix-ui/themes/styles.css";
 
 import { Container, Theme } from "@radix-ui/themes";
 import Navbar from "./components/Navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Noto_Sans({
+  style: "normal",
+  weight: "500",
+  subsets: ["latin"],
+  variable: "--font-noto-sans",
+});
 
 export const metadata: Metadata = {
   title: "Ayroid",
@@ -20,8 +25,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Theme accentColor="iris" radius="small" appearance="dark">
+      <body className={inter.variable}>
+        <Theme accentColor="jade" radius="small" appearance="dark">
           <main className="p-5">
             <Navbar />
             <Container>{children}</Container>

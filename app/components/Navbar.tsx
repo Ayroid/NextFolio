@@ -20,7 +20,7 @@ const Navbar = () => {
             {navItems.map(({ name, href }) => (
               <li
                 key={name}
-                className="font-medium hover:text-gray-400 transition-colors"
+                className="font-medium hover:text-radix-accent transition-colors"
               >
                 <Link href={href}>{name}</Link>
               </li>
