@@ -12,10 +12,16 @@ const Homepage = () => {
       direction="column"
       gap="5"
     >
-      <Flex direction="column" align="center" gap="2">
-        <Avatar src={ProfilePic.src} fallback="A" radius="full" size="7" />
-        <Text weight="bold">
-          Hi! <Strong className="text-radix-accent">I&apos;m Ayush</Strong>
+      <Flex direction="column" align="center" gap="3">
+        <Avatar
+          src={ProfilePic.src}
+          fallback="A"
+          radius="full"
+          size="8"
+          className="shadow-[0_0_90px_-20px] shadow-radix-accent"
+        />
+        <Text weight="bold" size="5">
+          Hi! I&apos;m<Strong className="text-radix-accent"> Ayush</Strong>
         </Text>
       </Flex>
       <Flex
