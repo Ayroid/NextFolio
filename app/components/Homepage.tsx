@@ -1,6 +1,7 @@
 import { Flex, Avatar, Strong, Button, Text } from "@radix-ui/themes";
 import Link from "next/link";
 import React from "react";
+import ProfilePic from "@/public/images/profile.jpg";
 
 const Homepage = () => {
   return (
@@ -12,12 +13,7 @@ const Homepage = () => {
       gap="5"
     >
       <Flex direction="column" align="center" gap="2">
-        <Avatar
-          src="https://yt3.googleusercontent.com/mf2_inyBy96kwvvbpJMzaptCDt1DNzZjYpWoT6Wiry8b9v_s5VFVfBrxyrrvB7GcOgG3T_se1Q=s900-c-k-c0x00ffffff-no-rj"
-          fallback="A"
-          radius="full"
-          size="7"
-        />
+        <Avatar src={ProfilePic.src} fallback="A" radius="full" size="7" />
         <Text weight="bold">
           Hi! <Strong className="text-radix-accent">I&apos;m Ayush</Strong>
         </Text>
