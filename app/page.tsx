@@ -1,6 +1,5 @@
 import { Container } from "@radix-ui/themes";
-
-import Homepage from "./components/Homepage";
+import Homepage from "./Homepage";
 
 export default function Home() {
   return (
