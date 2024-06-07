@@ -26,7 +26,7 @@ const SectionHeading = ({
       <Heading
         size="9"
         weight="medium"
-        className={`text-zinc-600 ${inline && "inline"}`}
+        className={`text-radix-accent ${inline && "inline"}`}
       >
         {highlight}
       </Heading>
