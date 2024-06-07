@@ -48,8 +48,6 @@ const Homepage = () => {
       </Text>
 
       <ContactButton />
-
-      <Badge color="cyan" text="badge" />
     </Flex>
   );
 };
