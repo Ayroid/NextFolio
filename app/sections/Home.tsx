@@ -1,5 +1,5 @@
 import { Avatar, ContactButton } from "@/app/components/";
-import { Code, Flex, Kbd, Strong, Text } from "@radix-ui/themes";
+import { Code, Flex, Strong, Text } from "@radix-ui/themes";
 
 const HomeSection = () => {
   return (
