@@ -1,16 +1,15 @@
 import "@radix-ui/themes/styles.css";
 import type { Metadata } from "next";
-import { Noto_Sans } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
 import { Container, Theme } from "@radix-ui/themes";
 import Navbar from "./components/Navbar";
 
-const inter = Noto_Sans({
-  style: "normal",
-  weight: "500",
+const inter = Inter({
+  weight: ["400", "700"],
   subsets: ["latin"],
-  variable: "--font-noto-sans",
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {

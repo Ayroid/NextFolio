@@ -1,4 +1,4 @@
-import { Avatar, ContactButton } from "@/app/components/";
+import { Avatar, ContactButton, ServiceCard } from "@/app/components/";
 import { Flex, Strong, Text } from "@radix-ui/themes";
 
 const Homepage = () => {
@@ -6,7 +6,7 @@ const Homepage = () => {
     <Flex
       justify="center"
       align="center"
-      height="75dvh"
+      // height="75dvh"
       direction="column"
       gap="5"
     >

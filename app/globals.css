@@ -25,4 +25,9 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  .top-light-shadow {
+    @apply border-[2px] border-neutral-900 border-t-neutral-800 border-opacity-75;
+  }
 }
+
