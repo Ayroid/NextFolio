@@ -1,14 +1,14 @@
-import { Avatar, ContactButton, ServiceCard } from "@/app/components/";
-import { Flex, Strong, Text } from "@radix-ui/themes";
+import { Avatar, ContactButton } from "@/app/components/";
+import { Code, Flex, Kbd, Strong, Text } from "@radix-ui/themes";
 
-const Homepage = () => {
+const HomeSection = () => {
   return (
     <Flex
-      justify="center"
+      justify="start"
       align="center"
-      // height="75dvh"
       direction="column"
       gap="5"
+      className="py-24 h-home-page"
     >
       <Flex direction="column" align="center" gap="3">
         <Avatar />
@@ -38,11 +38,27 @@ const Homepage = () => {
         }}
         className="w-2/3 text-center text-gray-400"
       >
-        I&apos;m a budding <Strong>Full Stack Developer</Strong> based in{" "}
-        <Strong>Dehradun, India 🇮🇳</Strong> <br />
-        Passionate about <Strong>Web Development</Strong> and{" "}
-        <Strong>DevOps</Strong>. Eager to create solutions for the{" "}
-        <Strong>tomorrow!</Strong>
+        I&apos;m a budding{" "}
+        <Code weight="bold" size="3">
+          Full Stack Developer
+        </Code>{" "}
+        based in{" "}
+        <Code weight="bold" size="3">
+          Dehradun, India 🇮🇳
+        </Code>{" "}
+        <br />
+        Passionate about{" "}
+        <Code weight="bold" size="3">
+          Web Development
+        </Code>{" "}
+        and{" "}
+        <Code weight="bold" size="3">
+          DevOps
+        </Code>
+        . Eager to create solutions for the{" "}
+        <Code weight="bold" size="3">
+          Tomorrow!
+        </Code>
       </Text>
 
       <ContactButton />
@@ -50,4 +66,4 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
+export default HomeSection;

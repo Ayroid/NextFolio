@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const ContactButton = () => {
   return (
-    <Button radius="full" size="4" mt="6" variant="soft">
+    <Button radius="full" size="4" mt="4" variant="soft">
       <Link href="/contact">Get in Touch</Link>
     </Button>
   );

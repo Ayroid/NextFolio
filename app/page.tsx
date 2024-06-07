@@ -1,10 +1,11 @@
 import { Container } from "@radix-ui/themes";
-import Homepage from "./Homepage";
+import { HomeSection, ServicesSection } from "./sections";
 
 export default function Home() {
   return (
     <Container>
-      <Homepage />
+      <HomeSection />
+      <ServicesSection />
     </Container>
   );
 }

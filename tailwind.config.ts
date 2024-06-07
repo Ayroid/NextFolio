@@ -16,6 +16,9 @@ const config: Config = {
       colors: {
         "radix-accent": "var(--accent-9)",
       },
+      height: {
+        "home-page": "calc(100dvh - 7rem)",
+      },
     },
   },
   plugins: [],

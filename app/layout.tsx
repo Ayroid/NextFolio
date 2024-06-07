@@ -28,7 +28,7 @@ export default function RootLayout({
         <Theme accentColor="jade" radius="small" appearance="dark">
           <main>
             <Navbar />
-            <Container>{children}</Container>
+            {children}
           </main>
         </Theme>
       </body>
