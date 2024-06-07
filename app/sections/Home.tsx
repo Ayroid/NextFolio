@@ -1,5 +1,5 @@
-import { Avatar, ContactButton } from "@/app/components/";
-import { Code, Flex, Strong, Text } from "@radix-ui/themes";
+import { Avatar, LinkButton } from "@/app/components/";
+import { Code, Flex, Strong, Text, Box } from "@radix-ui/themes";
 
 const HomeSection = () => {
   return (
@@ -44,9 +44,9 @@ const HomeSection = () => {
         </Code>{" "}
         based in{" "}
         <Code weight="bold" size="3">
-          Dehradun, India 🇮🇳
+          Dehradun, India
         </Code>{" "}
-        <br />
+        🇮🇳 <br />
         Passionate about{" "}
         <Code weight="bold" size="3">
           Web Development
@@ -61,7 +61,9 @@ const HomeSection = () => {
         </Code>
       </Text>
 
-      <ContactButton />
+      <Box mt="4">
+        <LinkButton link="/contact" text="Get in Touch" />
+      </Box>
     </Flex>
   );
 };
