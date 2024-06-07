@@ -8,7 +8,7 @@ interface Props {
 const Badge = ({ text, color }: Props) => {
   return (
     <Text
-      className="font-semibold rounded-lg py-1 px-4 top-light-shadow"
+      className="font-semibold rounded-lg py-1 px-4 top-light-shadow w-fit"
       style={{ color }}
     >
       {text.toUpperCase()}

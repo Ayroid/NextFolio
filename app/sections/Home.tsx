@@ -36,7 +36,7 @@ const HomeSection = () => {
           initial: "2",
           md: "3",
         }}
-        className="w-2/3 text-center text-gray-400"
+        className="w-2/3 text-center text-gray-accent"
       >
         I&apos;m a budding{" "}
         <Code weight="bold" size="3">
