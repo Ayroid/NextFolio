@@ -34,8 +34,7 @@ const Homepage = () => {
         <Text size={{ initial: "6", md: "9" }} align="center" className="w-3/4">
           <Strong>Unleashing Solutions</Strong>{" "}
           <span className="text-radix-accent">with</span>
-        </Text>
-        <Text size={{ initial: "6", md: "9" }} align="center" className="w-3/4">
+          <br />
           <span className="text-radix-accent"> the</span>
           <Strong> Precision of Code Crafting</Strong>
         </Text>
