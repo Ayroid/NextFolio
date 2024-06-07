@@ -1,7 +1,6 @@
-import { Flex, Avatar, Strong, Button, Text } from "@radix-ui/themes";
-import Link from "next/link";
+import { Flex, Strong, Text } from "@radix-ui/themes";
 import React from "react";
-import ProfilePic from "@/public/images/profile.jpg";
+import { Avatar, ContactButton } from "@/app/components/";
 
 const Homepage = () => {
   return (
@@ -13,13 +12,7 @@ const Homepage = () => {
       gap="5"
     >
       <Flex direction="column" align="center" gap="3">
-        <Avatar
-          src={ProfilePic.src}
-          fallback="A"
-          radius="full"
-          size="8"
-          className="shadow-[0_0_90px_-20px] shadow-radix-accent"
-        />
+        <Avatar />
         <Text weight="bold" size="5">
           Hi! I&apos;m<Strong className="text-radix-accent"> Ayush</Strong>
         </Text>
@@ -53,9 +46,7 @@ const Homepage = () => {
         <Strong>tomorrow!</Strong>
       </Text>
 
-      <Button radius="full" size="4" mt="9">
-        <Link href="/contact">Get in Touch</Link>
-      </Button>
+      <ContactButton />
     </Flex>
   );
 };
