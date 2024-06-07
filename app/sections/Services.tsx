@@ -1,53 +1,63 @@
-import { Avatar, ContactButton } from "@/app/components/";
-import { Flex, Strong, Text } from "@radix-ui/themes";
+import { ServiceCard, Badge, SectionHeading } from "@/app/components/";
+import { Flex, Container } from "@radix-ui/themes";
+import { CgWebsite, CgInfinity } from "react-icons/cg";
+import { TbServer2 } from "react-icons/tb";
 
-const Homepage = () => {
+const servicesData = [
+  {
+    Icon: <CgWebsite color="#00ffff" size="40" />,
+    heading: "Stunning Frontend",
+    text: (
+      <p>
+        Experienced in creating beautiful and responsive web applications using
+        modern technologies like <strong>React</strong>,{" "}
+        <strong>Next.js</strong>, and <strong>TailwindCSS</strong>.
+      </p>
+    ),
+  },
+  {
+    Icon: <TbServer2 color="#ffcd95" size="40" />,
+    heading: "Robust Backend",
+    text: (
+      <p>
+        Specialized in building scalable and efficient backend services with{" "}
+        <strong>Node.js</strong>, <strong>Express</strong>, and{" "}
+        <strong>MongoDB</strong> using <strong>RESTful APIs</strong> and{" "}
+        <strong>GraphQL</strong>.
+      </p>
+    ),
+  },
+  {
+    Icon: <CgInfinity color="#9b00ff" size="40" />,
+    heading: "DevOps Solutions",
+    text: (
+      <p>
+        Proficient in <strong>CI/CD</strong> pipelines,{" "}
+        <strong>Dockerizing</strong> applications, and{" "}
+        <strong>deploying</strong> on <strong>AWS</strong> and{" "}
+        <strong>Azure</strong> for smooth operations.
+      </p>
+    ),
+  },
+];
+
+const ServicesSection = () => {
   return (
-    <Flex
-      justify="start"
-      align="center"
-      direction="column"
-      gap="5"
-      className="py-24 h-home-page"
-    >
-      <Flex direction="column" align="center" gap="3">
-        <Avatar />
-        <Text weight="bold" size="5">
-          Hi! I&apos;m<Strong className="text-radix-accent"> Ayush</Strong>
-        </Text>
-      </Flex>
+    <Container className="md:mx-4 mx-6">
+      <Badge color="cyan" text="Services" />
+      <SectionHeading text="Solution Oriented" highlight="Developer" />
       <Flex
-        direction="column"
-        width="100%"
         justify="center"
         align="center"
-        gap="1"
+        gap="5"
+        className="w-full xl:flex-nowrap flex-wrap"
       >
-        <Text size={{ initial: "6", md: "9" }} align="center" className="w-3/4">
-          <Strong>Unleashing Solutions</Strong>{" "}
-          <span className="text-radix-accent">with</span>
-          <br />
-          <span className="text-radix-accent"> the</span>
-          <Strong> Precision of Code Crafting</Strong>
-        </Text>
+        {servicesData.map((service) => (
+          <ServiceCard key={service.heading} {...service} />
+        ))}
       </Flex>
-      <Text
-        size={{
-          initial: "2",
-          md: "3",
-        }}
-        className="w-2/3 text-center text-gray-400"
-      >
-        I&apos;m a budding <Strong>Full Stack Developer</Strong> based in{" "}
-        <Strong>Dehradun, India 🇮🇳</Strong> <br />
-        Passionate about <Strong>Web Development</Strong> and{" "}
-        <Strong>DevOps</Strong>. Eager to create solutions for the{" "}
-        <Strong>tomorrow!</Strong>
-      </Text>
-
-      <ContactButton />
-    </Flex>
+    </Container>
   );
 };
 
-export default Homepage;
+export default ServicesSection;

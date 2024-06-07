@@ -17,7 +17,8 @@ const config: Config = {
         "radix-accent": "var(--accent-9)",
       },
       height: {
-        "home-page": "calc(100dvh - 7rem)",
+        "home-page-initial": "calc(100dvh - 2rem)",
+        "home-page-md": "calc(100dvh - 7rem)",
       },
     },
   },

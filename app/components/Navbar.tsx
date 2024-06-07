@@ -22,7 +22,7 @@ const Navbar = () => {
   };
 
   return (
-    <Container className="p-5 bg-zinc-950 md:bg-inherit h-28">
+    <Container className="p-5 bg-zinc-950 md:bg-inherit md:h-28">
       <Flex justify="between" align="center">
         <Text className="text-xl font-semibold w-20">AYROID</Text>
         <Flex
