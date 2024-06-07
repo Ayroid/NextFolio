@@ -1,7 +1,7 @@
+import "@radix-ui/themes/styles.css";
 import type { Metadata } from "next";
 import { Noto_Sans } from "next/font/google";
 import "./globals.css";
-import "@radix-ui/themes/styles.css";
 
 import { Container, Theme } from "@radix-ui/themes";
 import Navbar from "./components/Navbar";

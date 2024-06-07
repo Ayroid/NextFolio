@@ -1,7 +1,5 @@
-import { Flex, Strong, Text } from "@radix-ui/themes";
-import React from "react";
 import { Avatar, ContactButton } from "@/app/components/";
-import Badge from "./components/Badge";
+import { Flex, Strong, Text } from "@radix-ui/themes";
 
 const Homepage = () => {
   return (
