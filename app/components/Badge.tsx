@@ -11,7 +11,7 @@ const Badge = ({ text, color }: Props) => {
       className="font-semibold rounded-lg py-1 px-4 top-light-shadow w-fit"
       style={{ color }}
     >
-      {text.toUpperCase()}
+      {text}
     </Text>
   );
 };

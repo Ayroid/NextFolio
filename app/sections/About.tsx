@@ -29,7 +29,7 @@ const About = () => {
         <Image src={ProfilePic} alt="profile" className="rounded-3xl" />
         <Box>
           <Badge color="#ffcd95" text="Open to Work" />
-          <SectionHeading text="About" highlight="Me" inline />
+          <SectionHeading text="About" highlight="me" inline />
           <Text className="text-gray-accent my-2 text-lg">
             Hey there! I&apos;m <Code>Ayush Singh Kushwah</Code>, a Final Year
             <Code>BTech Computer Science</Code> student specializing in{" "}
