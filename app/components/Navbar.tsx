@@ -24,7 +24,9 @@ const Navbar = () => {
   return (
     <Container className="p-5 bg-zinc-950 md:bg-inherit md:h-28">
       <Flex justify="between" align="center">
-        <Text className="text-xl font-semibold w-20">AYROID</Text>
+        <Link href="/">
+          <Text className="text-xl font-semibold w-20">AYROID</Text>
+        </Link>
         <Flex
           className={`fixed md:static top-[4.3rem] right-0 h-full bg-zinc-950 md:bg-inherit transition-transform md:transition-none duration-500 md:translate-x-0 md:h-auto md:w-auto w-48 items-start px-5 ${
             menuOpen ? "translate-x-0" : "translate-x-full"
