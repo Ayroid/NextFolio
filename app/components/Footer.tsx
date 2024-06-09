@@ -7,7 +7,7 @@ import SectionHeading from "./SectionHeading";
 
 const Footer = () => {
   return (
-    <Container className="min-w-[23rem]">
+    <Container>
       <Flex
         justify="center"
         align="center"

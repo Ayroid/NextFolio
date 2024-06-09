@@ -13,7 +13,7 @@ const ServiceCard = ({ Icon, heading, text }: Props) => {
       direction="column"
       align="start"
       justify="start"
-      className="top-light-shadow max-h-96 min-h-80 w-[23rem] min-w-[23rem] rounded-2xl bg-neutral-900 p-8"
+      className="top-light-shadow min-h-80 max-w-[23rem] rounded-2xl bg-neutral-900 p-8 transition-colors duration-300 ease-out hover:bg-neutral-800 md:min-w-[23rem]"
     >
       <Box className="top-light-shadow mb-2 rounded-full bg-neutral-950 p-4">
         {Icon}
