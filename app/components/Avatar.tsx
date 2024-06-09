@@ -1,4 +1,4 @@
-import ProfilePic from "@/public/images/profile/profile.jpg";
+import ProfilePic from "@/public/images/profile/profile.jpeg";
 import { Avatar as RadixAvatar } from "@radix-ui/themes";
 
 const Avatar = () => {
