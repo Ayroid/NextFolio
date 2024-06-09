@@ -11,5 +11,6 @@ export { default as FormTextField } from "./FormTextField";
 export { default as LinkButton } from "./LinkButton";
 export { default as LoadingSpinner } from "./LoadingSpinner";
 export { default as Navbar } from "./Navbar";
+export { default as ProjectCard } from "./ProjectCard";
 export { default as SectionHeading } from "./SectionHeading";
 export { default as ServiceCard } from "./ServiceCard";

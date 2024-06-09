@@ -3,6 +3,7 @@ import {
   AboutSection,
   BlogSection,
   HomeSection,
+  ProjectsSection,
   ServicesSection,
   SkillsSection,
 } from "./sections";
@@ -19,6 +20,9 @@ export default function Home() {
       </Box>
       <Box className="mb-36">
         <SkillsSection />
+      </Box>
+      <Box className="mb-36">
+        <ProjectsSection />
       </Box>
       <Box className="mb-36">
         <BlogSection />

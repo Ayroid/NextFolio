@@ -27,17 +27,17 @@ const BlogCard = ({
         align="center"
         justify="center"
         gap="6"
-        className="top-light-shadow group min-h-96 w-fit cursor-pointer flex-col rounded-2xl bg-neutral-900 p-8 transition-colors duration-300 ease-out hover:bg-neutral-800 lg:w-full lg:flex-row"
+        className="top-light-shadow group min-h-96 w-fit cursor-pointer flex-col rounded-2xl bg-neutral-900 p-4 transition-colors duration-300 ease-out hover:bg-neutral-800 md:p-8 lg:w-full lg:flex-row"
       >
         <Flex
           justify="center"
           align="center"
-          className="overflow-hidden rounded-xl lg:h-80 lg:w-5/12"
+          className="overflow-hidden rounded-xl lg:w-5/12"
         >
           <Image
             src={imageurl}
             alt="profile"
-            className="sm:h-80 w-full rounded-xl transition-transform duration-300 ease-out group-hover:scale-125"
+            className="w-full rounded-xl transition-transform duration-300 ease-out group-hover:scale-125 sm:max-h-[30rem]"
           />
         </Flex>
         <Flex direction="column" gap="4" className="lg:w-7/12">
