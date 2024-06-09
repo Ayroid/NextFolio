@@ -12,9 +12,9 @@ const ContactCard = ({ Icon, title, value }: Props) => {
     <Flex
       gap="5"
       align="center"
-      className="bg-neutral-900 rounded-2xl top-light-shadow py-6 px-8 w-[23rem]"
+      className="top-light-shadow w-[23rem] rounded-2xl bg-neutral-900 px-8 py-6"
     >
-      <Box className="rounded-full bg-neutral-950 p-4 top-light-shadow">
+      <Box className="top-light-shadow rounded-full bg-neutral-950 p-4">
         {Icon}
       </Box>
       <Flex direction="column" gap="1">

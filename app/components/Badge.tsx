@@ -8,7 +8,7 @@ interface Props {
 const Badge = ({ text, color }: Props) => {
   return (
     <Text
-      className="font-semibold rounded-lg py-1 px-4 top-light-shadow w-fit"
+      className="top-light-shadow w-fit rounded-lg px-4 py-1 font-semibold"
       style={{ color }}
     >
       {text}

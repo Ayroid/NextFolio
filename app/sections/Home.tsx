@@ -8,7 +8,7 @@ const HomeSection = () => {
       align="center"
       direction="column"
       gap="5"
-      className="py-24 md:h-home-page-md h-home-page-initial"
+      className="h-home-page-initial py-24 md:h-home-page-md"
     >
       <Flex direction="column" align="center" gap="3">
         <Avatar />
@@ -36,7 +36,7 @@ const HomeSection = () => {
           initial: "2",
           md: "3",
         }}
-        className="w-2/3 text-center text-gray-accent"
+        className="text-gray-accent w-2/3 text-center"
       >
         I&apos;m a budding{" "}
         <Code weight="bold" size="3">

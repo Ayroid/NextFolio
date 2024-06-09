@@ -60,12 +60,12 @@ const ContactForm = () => {
   return (
     <Flex
       direction="column"
-      className="bg-neutral-900 rounded-2xl top-light-shadow py-6 px-8 w-[23rem] md:w-[47.5rem]"
+      className="top-light-shadow w-[23rem] rounded-2xl bg-neutral-900 px-8 py-6 md:w-[47.5rem]"
     >
       <Text className="text-xl font-semibold">React out to me!</Text>
       <FormProvider {...formMethods}>
         <form
-          className="space-y-5 flex flex-col justify-center align-middle"
+          className="flex flex-col justify-center space-y-5 align-middle"
           onSubmit={handleSubmit(submitContactForm)}
         >
           <Flex

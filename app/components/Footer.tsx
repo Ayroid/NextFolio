@@ -1,10 +1,9 @@
-import { Container, Flex, Text } from "@radix-ui/themes";
-import React from "react";
-import SectionHeading from "./SectionHeading";
-import LinkButton from "./LinkButton";
+import { Container, Flex } from "@radix-ui/themes";
 import Link from "next/link";
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import LinkButton from "./LinkButton";
+import SectionHeading from "./SectionHeading";
 
 const Footer = () => {
   return (
@@ -17,7 +16,7 @@ const Footer = () => {
           md: "row",
         }}
         gap="5"
-        className="w-full border-t-[1px] border-radix-accent p-12 min-h-80"
+        className="min-h-80 w-full border-t-[1px] border-radix-accent p-12"
       >
         <Flex
           direction="column"

@@ -15,7 +15,7 @@ const SectionHeading = ({
   textCenter = false,
 }: Props) => {
   return (
-    <Box className={`mt-4 mb-12 ${textCenter && "text-center"}`}>
+    <Box className={`mb-12 mt-4 ${textCenter && "text-center"}`}>
       <Heading
         size={{
           initial: "8",

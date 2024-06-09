@@ -43,14 +43,14 @@ const servicesData = [
 
 const ServicesSection = () => {
   return (
-    <Container className="md:mx-4 mx-8">
+    <Container className="mx-8 md:mx-4">
       <Badge color="cyan" text="Services" />
       <SectionHeading text="Solution Oriented" highlight="Developer" />
       <Flex
         justify="center"
         align="center"
         gap="5"
-        className="w-full xl:flex-nowrap flex-wrap"
+        className="w-full flex-wrap xl:flex-nowrap"
       >
         {servicesData.map((service) => (
           <ServiceCard key={service.heading} {...service} />

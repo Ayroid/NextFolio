@@ -24,12 +24,12 @@ const socialMedia = [
 
 const About = () => {
   return (
-    <Container className="md:mx-4 mx-8">
+    <Container className="mx-8 md:mx-4">
       <Flex
         justify="center"
         align="center"
         gap="9"
-        className="lg:flex-nowrap flex-wrap-reverse"
+        className="flex-wrap-reverse lg:flex-nowrap"
       >
         <Image src={ProfilePic} alt="profile" className="rounded-3xl" />
         <Box>
@@ -54,10 +54,13 @@ const About = () => {
             and turn <Code>ideas into reality</Code> in the ever-evolving world
             of technology!
           </Text>
-          <Flex mt="8" justify={{
-            initial: "center",
-            md: "start",
-          }}>
+          <Flex
+            mt="8"
+            justify={{
+              initial: "center",
+              md: "start",
+            }}
+          >
             <LinkButton link="/about" text="Discover More" />
           </Flex>
         </Box>
