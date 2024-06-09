@@ -1,4 +1,4 @@
-import ProfilePic from "@/public/images/profile-crop.jpg";
+import ProfilePic from "@/public/images/profile/profile-crop.jpg";
 import { Box, Code, Container, Flex, Text } from "@radix-ui/themes";
 import Image from "next/image";
 import { FaLinkedinIn } from "react-icons/fa";
