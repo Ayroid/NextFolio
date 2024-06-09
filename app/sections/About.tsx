@@ -22,7 +22,7 @@ const socialMedia = [
   },
 ];
 
-const About = () => {
+const AboutSection = () => {
   return (
     <Container className="mx-8 md:mx-4">
       <Flex
@@ -36,7 +36,7 @@ const About = () => {
           <Badge color="#ffcd95" text="Open to Work" />
           <SectionHeading text="About" highlight="me" inline />
           <Text className="text-gray-accent text-lg">
-            Hey there! I&apos;m <Code>Ayush Singh Kushwah</Code>, a Final Year
+            Hey there! I&apos;m <Code>Ayush Singh Kushwah</Code>, a Final Year{" "}
             <Code>BTech Computer Science</Code> student specializing in{" "}
             <Code>DevOps</Code> at the{" "}
             <Code>University of Petroleum and Energy Studies</Code>.
@@ -69,4 +69,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutSection;

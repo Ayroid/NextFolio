@@ -1,9 +1,10 @@
 import { Container, Box } from "@radix-ui/themes";
 import {
-  HomeSection,
-  ServicesSection,
   AboutSection,
   BlogSection,
+  HomeSection,
+  ServicesSection,
+  SkillsSection,
 } from "./sections";
 
 export default function Home() {
@@ -15,6 +16,9 @@ export default function Home() {
       </Box>
       <Box className="mb-36">
         <AboutSection />
+      </Box>
+      <Box className="mb-36">
+        <SkillsSection />
       </Box>
       <Box className="mb-36">
         <BlogSection />

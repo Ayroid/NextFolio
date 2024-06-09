@@ -44,7 +44,7 @@ const servicesData = [
 const ServicesSection = () => {
   return (
     <Container className="mx-8 md:mx-4">
-      <Badge color="cyan" text="Services" />
+      <Badge color="#00ffff" text="Services" />
       <SectionHeading text="Solution Oriented" highlight="Developer" />
       <Flex
         justify="center"
