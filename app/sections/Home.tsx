@@ -23,7 +23,7 @@ const HomeSection = () => {
         align="center"
         gap="1"
       >
-        <Text size={{ initial: "6", md: "9" }} align="center" className="w-3/4">
+        <Text size={{ initial: "8", md: "9" }} align="center" className="w-3/4">
           <Strong>Unleashing Solutions</Strong>{" "}
           <span className="text-radix-accent">with</span>
           <br />

@@ -5,7 +5,7 @@ import { TbServer2 } from "react-icons/tb";
 
 const servicesData = [
   {
-    Icon: <CgWebsite color="#00ffff" size="40" />,
+    Icon: <CgWebsite color="#00ffff" className="size-7 md:size-8" />,
     heading: "Stunning Frontend",
     text: (
       <p>
@@ -16,10 +16,10 @@ const servicesData = [
     ),
   },
   {
-    Icon: <TbServer2 color="#ffcd95" size="40" />,
+    Icon: <TbServer2 color="#ffcd95" className="size-7 md:size-8" />,
     heading: "Robust Backend",
     text: (
-      <p>
+      <p className="md:text-base">
         Specialized in building scalable and efficient backend services with{" "}
         <strong>Node.js</strong>, <strong>Express</strong>, and{" "}
         <strong>MongoDB</strong> using <strong>RESTful APIs</strong> and{" "}
@@ -28,7 +28,7 @@ const servicesData = [
     ),
   },
   {
-    Icon: <CgInfinity color="#9b00ff" size="40" />,
+    Icon: <CgInfinity color="#9b00ff" className="size-7 md:size-8" />,
     heading: "DevOps Solutions",
     text: (
       <p>
@@ -43,7 +43,7 @@ const servicesData = [
 
 const ServicesSection = () => {
   return (
-    <Container className="md:mx-4 mx-6">
+    <Container className="md:mx-4 mx-8">
       <Badge color="cyan" text="Services" />
       <SectionHeading text="Solution Oriented" highlight="Developer" />
       <Flex

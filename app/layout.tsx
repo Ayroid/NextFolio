@@ -5,6 +5,7 @@ import "./globals.css";
 
 import { Theme } from "@radix-ui/themes";
 import Navbar from "./components/Navbar";
+import { Footer } from "./components";
 
 const inter = Inter({
   weight: ["400", "700"],
@@ -29,6 +30,7 @@ export default function RootLayout({
           <main>
             <Navbar />
             {children}
+            <Footer />
           </main>
         </Theme>
       </body>

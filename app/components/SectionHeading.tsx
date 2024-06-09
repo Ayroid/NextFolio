@@ -3,7 +3,7 @@ import { Heading, Box } from "@radix-ui/themes";
 
 interface Props {
   text: string;
-  highlight: string;
+  highlight?: string;
   inline?: boolean;
   textCenter?: boolean;
 }
@@ -17,14 +17,20 @@ const SectionHeading = ({
   return (
     <Box className={`mt-4 mb-12 ${textCenter && "text-center"}`}>
       <Heading
-        size="9"
+        size={{
+          initial: "8",
+          md: "9",
+        }}
         weight="medium"
-        className={`${inline ? "inline" : "mb-2"}`}
+        className={`${inline ? "inline" : "md:mb-2"}`}
       >
         {text}{" "}
       </Heading>
       <Heading
-        size="9"
+        size={{
+          initial: "8",
+          md: "9",
+        }}
         weight="medium"
         className={`text-radix-accent ${inline && "inline"}`}
       >

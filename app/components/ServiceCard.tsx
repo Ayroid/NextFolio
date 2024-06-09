@@ -18,7 +18,21 @@ const ServiceCard = ({ Icon, heading, text }: Props) => {
       <Box className="rounded-full bg-neutral-950 p-4 mb-2 top-light-shadow">
         {Icon}
       </Box>
-      <Heading weight="medium" mt="4" mb="2" size="8">
+      <Heading
+        weight="medium"
+        mt={{
+          initial: "2",
+          md: "4",
+        }}
+        mb={{
+          initial: "1",
+          md: "2",
+        }}
+        size={{
+          initial: "7",
+          md: "8",
+        }}
+      >
         {heading}
       </Heading>
       <Text className="text-gray-accent my-2 text-lg">{text}</Text>

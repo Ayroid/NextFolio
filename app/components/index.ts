@@ -10,3 +10,4 @@ export { default as LoadingSpinner } from "./LoadingSpinner";
 export { default as FormTextField } from "./FormTextField";
 export { default as FormSelectField } from "./FormSelectField";
 export { default as FormErrorMessage } from "./FormErrorMessage";
+export { default as Footer } from "./Footer";
