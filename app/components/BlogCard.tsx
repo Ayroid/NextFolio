@@ -60,7 +60,11 @@ const BlogCard = ({
           </Heading>
           <Text className="text-gray-accent text-lg">{description}</Text>
           <Text className="mt-4">
-            Read More <IoIosArrowRoundForward className="inline" size="25" />
+            Read More{" "}
+            <IoIosArrowRoundForward
+              className="inline transition-all duration-300 group-hover:ml-2"
+              size="25"
+            />
           </Text>
         </Flex>
       </Flex>
