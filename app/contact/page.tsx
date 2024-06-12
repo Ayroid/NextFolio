@@ -23,7 +23,7 @@ const ContactPage = () => {
             />
             <ContactCard
               title="Phone"
-              value="+91 9456713820"
+              value="+91 94567 13820"
               Icon={<MdPhone size="40" color="#ffcd95" />}
             />
           </Flex>

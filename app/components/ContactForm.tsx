@@ -147,7 +147,7 @@ const ContactForm = () => {
             radius="large"
             size="3"
           >
-            {"Submit Form"} {isSubmitting && <LoadingSpinner />}
+            {"Send"} {isSubmitting && <LoadingSpinner />}
           </Button>
         </form>
       </FormProvider>
