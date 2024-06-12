@@ -8,6 +8,8 @@ import {
   SkillsSection,
 } from "./sections";
 
+import { BackToTop } from "@/app/components";
+
 export default function Home() {
   return (
     <Container className="space-y-96">
@@ -26,6 +28,9 @@ export default function Home() {
       </Box>
       <Box className="mb-36">
         <BlogSection />
+      </Box>
+      <Box className="fixed bottom-20 right-20">
+        <BackToTop />
       </Box>
     </Container>
   );

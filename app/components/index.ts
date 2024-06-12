@@ -1,4 +1,5 @@
 export { default as Avatar } from "./Avatar";
+export { default as BackToTop } from "./BackToTop";
 export { default as Badge } from "./Badge";
 export { default as BadgeCategory } from "./BadgeCategory";
 export { default as BlogCard } from "./BlogCard";
