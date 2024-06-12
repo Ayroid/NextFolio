@@ -13,5 +13,6 @@ export { default as LinkButton } from "./LinkButton";
 export { default as LoadingSpinner } from "./LoadingSpinner";
 export { default as Navbar } from "./Navbar";
 export { default as ProjectCard } from "./ProjectCard";
+export { default as RadioCardSwitch } from "./RadioCardSwitch";
 export { default as SectionHeading } from "./SectionHeading";
 export { default as ServiceCard } from "./ServiceCard";

@@ -40,7 +40,7 @@ const ProjectCard = ({
     <Container className="contain-content">
       <Flex
         gap="8"
-        align="center"
+        align="start"
         justify="center"
         className="flex-wrap lg:flex-nowrap"
       >

@@ -6,7 +6,7 @@ import {
   ProjectsSection,
   ServicesSection,
   SkillsSection,
-} from "./sections";
+} from "./sections/home";
 
 import { BackToTop } from "@/app/components";
 

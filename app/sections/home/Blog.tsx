@@ -1,5 +1,5 @@
 import { Container, Flex } from "@radix-ui/themes";
-import { Badge, SectionHeading, BlogCard } from "../components";
+import { Badge, SectionHeading, BlogCard } from "../../components";
 import NextjsVsReact from "@/public/images/blogs/nextjsVsReact.jpeg";
 import ConventionalCommits from "@/public/images/blogs/conventionalCommits.jpeg";
 import DockerizeMERN from "@/public/images/blogs/dockerizeMERN.jpeg";

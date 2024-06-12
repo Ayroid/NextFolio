@@ -24,7 +24,7 @@ const BlogCard = ({
   return (
     <Link href={link}>
       <Flex
-        align="center"
+        align="start"
         justify="center"
         gap="6"
         className="top-light-shadow group min-h-96 w-fit cursor-pointer flex-col rounded-2xl bg-neutral-900 p-4 transition-colors duration-300 ease-out hover:bg-neutral-800 md:p-8 lg:w-full lg:flex-row"
