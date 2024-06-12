@@ -1,5 +1,7 @@
+import { UnderDevelopmemt } from "../components";
+
 const PortfolioPage = () => {
-  return <div>PortfolioPage</div>;
+  return <UnderDevelopmemt />;
 };
 
 export default PortfolioPage;

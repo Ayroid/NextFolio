@@ -1,7 +1,7 @@
-import React from "react";
+import { UnderDevelopmemt } from "@/app/components";
 
 const BlogPage = () => {
-  return <div>BlogPage</div>;
+  return <UnderDevelopmemt />;
 };
 
 export default BlogPage;

@@ -6,8 +6,8 @@ interface Props {
   };
 }
 
-const IndividualBlogPage = ({ params: { id } }: Props) => {
+const IndividualProjectPage = ({ params: { id } }: Props) => {
   return <UnderDevelopmemt />;
 };
 
-export default IndividualBlogPage;
+export default IndividualProjectPage;
