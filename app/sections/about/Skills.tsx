@@ -1,51 +1,51 @@
 "use client";
 
-import { Badge, SectionHeading, RadioCardSwitch } from "@/app/components";
+import { Badge, RadioCardSwitch, SectionHeading } from "@/app/components";
 import { Container, Flex, Tooltip } from "@radix-ui/themes";
 import { useState } from "react";
 
 import {
-  BiLogoJava,
-  BiLogoJavascript,
-  BiLogoPython,
+  BiLogoAws,
+  BiLogoCss3,
+  BiLogoDocker,
   BiLogoFigma,
-  BiLogoTypescript,
   BiLogoGit,
   BiLogoGithub,
-  BiLogoDocker,
-  BiLogoAws,
   BiLogoHtml5,
-  BiLogoCss3,
-  BiLogoTailwindCss,
+  BiLogoJava,
+  BiLogoJavascript,
+  BiLogoMongodb,
+  BiLogoNodejs,
+  BiLogoPython,
   BiLogoReact,
   BiLogoRedux,
-  BiLogoNodejs,
-  BiLogoMongodb,
+  BiLogoTailwindCss,
+  BiLogoTypescript,
 } from "react-icons/bi";
 
-import { FaLinux, FaJenkins } from "react-icons/fa";
+import { FaJenkins, FaLinux } from "react-icons/fa";
 
 import {
-  SiTerraform,
   SiAnsible,
-  SiSelenium,
   SiApachemaven,
-  SiGnubash,
-  SiGithubactions,
-  SiNetlify,
-  SiVercel,
   SiBootstrap,
-  SiNextdotjs,
   SiExpress,
+  SiGithubactions,
+  SiGnubash,
+  SiGrafana,
   SiMongoose,
-  SiPrisma,
+  SiNetlify,
+  SiNextdotjs,
   SiNginx,
   SiPostman,
-  SiRedis,
+  SiPrisma,
   SiPrometheus,
-  SiGrafana,
   SiRadixui,
+  SiRedis,
+  SiSelenium,
   SiShadcnui,
+  SiTerraform,
+  SiVercel,
 } from "react-icons/si";
 
 const SkillsSection = () => {

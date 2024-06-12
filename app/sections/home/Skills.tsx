@@ -2,47 +2,47 @@ import { Badge, SectionHeading } from "@/app/components";
 import { Container, Flex, Tooltip } from "@radix-ui/themes";
 
 import {
-  BiLogoJava,
-  BiLogoJavascript,
-  BiLogoPython,
+  BiLogoAws,
+  BiLogoCss3,
+  BiLogoDocker,
   BiLogoFigma,
-  BiLogoTypescript,
   BiLogoGit,
   BiLogoGithub,
-  BiLogoDocker,
-  BiLogoAws,
   BiLogoHtml5,
-  BiLogoCss3,
-  BiLogoTailwindCss,
+  BiLogoJava,
+  BiLogoJavascript,
+  BiLogoMongodb,
+  BiLogoNodejs,
+  BiLogoPython,
   BiLogoReact,
   BiLogoRedux,
-  BiLogoNodejs,
-  BiLogoMongodb,
+  BiLogoTailwindCss,
+  BiLogoTypescript,
 } from "react-icons/bi";
 
-import { FaLinux, FaJenkins } from "react-icons/fa";
+import { FaJenkins, FaLinux } from "react-icons/fa";
 
 import {
-  SiTerraform,
   SiAnsible,
-  SiSelenium,
   SiApachemaven,
-  SiGnubash,
-  SiGithubactions,
-  SiNetlify,
-  SiVercel,
   SiBootstrap,
-  SiNextdotjs,
   SiExpress,
+  SiGithubactions,
+  SiGnubash,
+  SiGrafana,
   SiMongoose,
-  SiPrisma,
+  SiNetlify,
+  SiNextdotjs,
   SiNginx,
   SiPostman,
-  SiRedis,
+  SiPrisma,
   SiPrometheus,
-  SiGrafana,
   SiRadixui,
+  SiRedis,
+  SiSelenium,
   SiShadcnui,
+  SiTerraform,
+  SiVercel,
 } from "react-icons/si";
 
 const SkillsSection = () => {
@@ -170,27 +170,27 @@ const SkillsSection = () => {
           </Tooltip>
 
           <Tooltip content="GitHub Actions">
-            <SiGithubactions className="size-[3.1rem] cursor-pointer md:size-[3.8rem] " />
+            <SiGithubactions className="size-[3.1rem] cursor-pointer md:size-[3.8rem]" />
           </Tooltip>
 
           <Tooltip content="Terraform">
-            <SiTerraform className="size-[3.1rem] cursor-pointer md:size-[3.8rem] " />
+            <SiTerraform className="size-[3.1rem] cursor-pointer md:size-[3.8rem]" />
           </Tooltip>
 
           <Tooltip content="Ansible">
-            <SiAnsible className="size-[3.1rem] cursor-pointer md:size-[3.8rem] " />
+            <SiAnsible className="size-[3.1rem] cursor-pointer md:size-[3.8rem]" />
           </Tooltip>
 
           <Tooltip content="Prometheus">
-            <SiPrometheus className="size-[3.1rem] cursor-pointer md:size-[3.8rem] " />
+            <SiPrometheus className="size-[3.1rem] cursor-pointer md:size-[3.8rem]" />
           </Tooltip>
 
           <Tooltip content="Grafana">
-            <SiGrafana className="size-[3.1rem] cursor-pointer md:size-[3.8rem] " />
+            <SiGrafana className="size-[3.1rem] cursor-pointer md:size-[3.8rem]" />
           </Tooltip>
 
           <Tooltip content="Nginx">
-            <SiNginx className="size-[3.1rem] cursor-pointer md:size-[3.8rem] " />
+            <SiNginx className="size-[3.1rem] cursor-pointer md:size-[3.8rem]" />
           </Tooltip>
 
           <Tooltip content="AWS">
@@ -198,11 +198,11 @@ const SkillsSection = () => {
           </Tooltip>
 
           <Tooltip content="Netlify">
-            <SiNetlify className="size-[3.1rem] cursor-pointer md:size-[3.8rem] " />
+            <SiNetlify className="size-[3.1rem] cursor-pointer md:size-[3.8rem]" />
           </Tooltip>
 
           <Tooltip content="Vercel">
-            <SiVercel className="size-[3.1rem] cursor-pointer md:size-[3.8rem] " />
+            <SiVercel className="size-[3.1rem] cursor-pointer md:size-[3.8rem]" />
           </Tooltip>
 
           <Tooltip content="Figma">
