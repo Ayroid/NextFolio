@@ -11,7 +11,7 @@ const UnderDev = () => {
         className="h-[30rem]"
         direction="column"
       >
-        <TbTools className="size-7 md:size-40" />
+        <TbTools className="size-32 md:size-40" />
         <SectionHeading
           text="This Page is"
           highlight="Under Development"

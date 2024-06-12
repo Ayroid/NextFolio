@@ -146,6 +146,7 @@ const ContactForm = () => {
             variant="soft"
             radius="large"
             size="3"
+            className="hover:cursor-pointer"
           >
             {"Send"} {isSubmitting && <LoadingSpinner />}
           </Button>

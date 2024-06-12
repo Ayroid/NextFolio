@@ -2,7 +2,6 @@ import { BadgeCategory } from "@/app/components";
 import { Flex, Heading, Text } from "@radix-ui/themes";
 import Image, { StaticImageData } from "next/image";
 import { IoIosArrowRoundForward } from "react-icons/io";
-import Link from "next/link";
 
 interface Props {
   imageurl: StaticImageData;
@@ -22,7 +21,7 @@ const BlogCard = ({
   date,
 }: Props) => {
   return (
-    <Link href={link}>
+    <a href={link} target="_blank">
       <Flex
         align="start"
         justify="center"
@@ -64,7 +63,7 @@ const BlogCard = ({
           </Text>
         </Flex>
       </Flex>
-    </Link>
+    </a>
   );
 };
 
