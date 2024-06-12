@@ -1,4 +1,4 @@
-import { Container, Flex } from "@radix-ui/themes";
+import { Container, Flex, Tooltip } from "@radix-ui/themes";
 import Link from "next/link";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -32,13 +32,19 @@ const Footer = () => {
           <LinkButton link="/contact" text="Contact me" />
           <Flex align="center" justify="center" gap="4" mt="6">
             <Link href="https://www.linkedin.com/in/ayroid/">
-              <FaLinkedinIn className="size-6 md:size-8" />
+              <Tooltip content="LinkedIn">
+                <FaLinkedinIn className="size-6 md:size-8" />
+              </Tooltip>
             </Link>
             <Link href="https://github.com/ayroid">
-              <FaGithub className="size-6 md:size-8" />
+              <Tooltip content="GitHub">
+                <FaGithub className="size-6 md:size-8" />
+              </Tooltip>
             </Link>
             <Link href="https://x.com/ayroids">
-              <FaXTwitter className="size-6 md:size-8" />
+              <Tooltip content="X">
+                <FaXTwitter className="size-6 md:size-8" />
+              </Tooltip>
             </Link>
           </Flex>
         </Flex>

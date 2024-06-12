@@ -62,7 +62,7 @@ const SkillsSection = () => {
           </Tooltip>
 
           <Tooltip content="NextJS">
-            <SiNextdotjs className="size-[3.1rem] cursor-pointer md:size-[4.2rem]" />
+            <SiNextdotjs className="size-[2.6rem] cursor-pointer md:size-[3.8rem]" />
           </Tooltip>
 
           <Tooltip content="Redux">
@@ -74,7 +74,7 @@ const SkillsSection = () => {
           </Tooltip>
 
           <Tooltip content="ExpressJS">
-            <SiExpress className="size-[3.1rem] cursor-pointer md:size-[4.2rem]" />
+            <SiExpress className="size-[2.6rem] cursor-pointer md:size-[3.8rem]" />
           </Tooltip>
 
           <Tooltip content="MongoDB">
@@ -82,15 +82,15 @@ const SkillsSection = () => {
           </Tooltip>
 
           <Tooltip content="Mongoose">
-            <SiMongoose className="size-[3.1rem] cursor-pointer md:size-[4.2rem]" />
+            <SiMongoose className="size-[2.6rem] cursor-pointer md:size-[3.8rem]" />
           </Tooltip>
 
           <Tooltip content="Prisma">
-            <SiPrisma className="size-[3.1rem] cursor-pointer md:size-[4.2rem]" />
+            <SiPrisma className="size-[2.6rem] cursor-pointer md:size-[3.8rem]" />
           </Tooltip>
 
           <Tooltip content="Redis">
-            <SiRedis className="size-[3.1rem] cursor-pointer md:size-[4.2rem]" />
+            <SiRedis className="size-[2.6rem] cursor-pointer md:size-[3.8rem]" />
           </Tooltip>
 
           <Tooltip content="JavaScript">
@@ -122,15 +122,15 @@ const SkillsSection = () => {
           </Tooltip>
 
           <Tooltip content="Bootstrap">
-            <SiBootstrap className="size-[3.1rem] cursor-pointer md:size-[4.2rem]" />
+            <SiBootstrap className="size-[3.1rem] cursor-pointer md:size-[3.8rem]" />
           </Tooltip>
 
           <Tooltip content="RadixUI">
-            <SiRadixui className="size-[3.1rem] cursor-pointer md:size-[4.2rem]" />
+            <SiRadixui className="size-[2.6rem] cursor-pointer md:size-[3.8rem]" />
           </Tooltip>
 
           <Tooltip content="ShadcnUI">
-            <SiShadcnui className="size-[3.1rem] cursor-pointer md:size-[4.2rem]" />
+            <SiShadcnui className="size-[2.6rem] cursor-pointer md:size-[3.8rem]" />
           </Tooltip>
 
           <Tooltip content="Linux">
@@ -154,15 +154,15 @@ const SkillsSection = () => {
           </Tooltip>
 
           <Tooltip content="Maven">
-            <SiApachemaven className="size-[3.1rem] cursor-pointer md:size-[4.2rem]" />
+            <SiApachemaven className="size-[3.1rem] cursor-pointer md:size-[3.8rem]" />
           </Tooltip>
 
           <Tooltip content="Selenium">
-            <SiSelenium className="size-[3.1rem] cursor-pointer md:size-[4.2rem]" />
+            <SiSelenium className="size-[3.1rem] cursor-pointer md:size-[3.8rem]" />
           </Tooltip>
 
           <Tooltip content="Postman">
-            <SiPostman className="size-[3.1rem] cursor-pointer md:size-[4.2rem]" />
+            <SiPostman className="size-[3.1rem] cursor-pointer md:size-[3.8rem]" />
           </Tooltip>
 
           <Tooltip content="Jenkins">
@@ -170,27 +170,27 @@ const SkillsSection = () => {
           </Tooltip>
 
           <Tooltip content="GitHub Actions">
-            <SiGithubactions className="size-[3.1rem] cursor-pointer md:size-[4.2rem]" />
+            <SiGithubactions className="size-[3.1rem] cursor-pointer md:size-[3.8rem] " />
           </Tooltip>
 
           <Tooltip content="Terraform">
-            <SiTerraform className="size-[3.1rem] cursor-pointer md:size-[4.2rem]" />
+            <SiTerraform className="size-[3.1rem] cursor-pointer md:size-[3.8rem] " />
           </Tooltip>
 
           <Tooltip content="Ansible">
-            <SiAnsible className="size-[3.1rem] cursor-pointer md:size-[4.2rem]" />
+            <SiAnsible className="size-[3.1rem] cursor-pointer md:size-[3.8rem] " />
           </Tooltip>
 
           <Tooltip content="Prometheus">
-            <SiPrometheus className="size-[3.1rem] cursor-pointer md:size-[4.2rem]" />
+            <SiPrometheus className="size-[3.1rem] cursor-pointer md:size-[3.8rem] " />
           </Tooltip>
 
           <Tooltip content="Grafana">
-            <SiGrafana className="size-[3.1rem] cursor-pointer md:size-[4.2rem]" />
+            <SiGrafana className="size-[3.1rem] cursor-pointer md:size-[3.8rem] " />
           </Tooltip>
 
           <Tooltip content="Nginx">
-            <SiNginx className="size-[3.1rem] cursor-pointer md:size-[4.2rem]" />
+            <SiNginx className="size-[3.1rem] cursor-pointer md:size-[3.8rem] " />
           </Tooltip>
 
           <Tooltip content="AWS">
@@ -198,15 +198,15 @@ const SkillsSection = () => {
           </Tooltip>
 
           <Tooltip content="Netlify">
-            <SiNetlify className="size-[3.1rem] cursor-pointer md:size-[4.2rem]" />
+            <SiNetlify className="size-[3.1rem] cursor-pointer md:size-[3.8rem] " />
           </Tooltip>
 
           <Tooltip content="Vercel">
-            <SiVercel className="size-[3.1rem] cursor-pointer md:size-[4.2rem]" />
+            <SiVercel className="size-[3.1rem] cursor-pointer md:size-[3.8rem] " />
           </Tooltip>
 
           <Tooltip content="Figma">
-            <BiLogoFigma className="size-14 cursor-pointer md:size-20" />
+            <BiLogoFigma className="size-14 cursor-pointer md:size-[4.2rem]" />
           </Tooltip>
         </Flex>
       </Flex>
