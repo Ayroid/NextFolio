@@ -1,6 +1,10 @@
 import { Container, Box } from "@radix-ui/themes";
-import { AboutSection, SkillsSection } from "@/app/sections/about";
-import { UnderDevelopmemt } from "@/app/components";
+import {
+  AboutSection,
+  SkillsSection,
+  ExperienceSection,
+} from "@/app/sections/about";
+
 const AboutPage = () => {
   return (
     <Container className="space-y-96">
@@ -10,7 +14,9 @@ const AboutPage = () => {
       <Box className="mb-36">
         <SkillsSection />
       </Box>
-      <UnderDevelopmemt />
+      <Box className="mb-36">
+        <ExperienceSection />
+      </Box>
     </Container>
   );
 };

@@ -20,8 +20,18 @@ const config: Config = {
         "home-page-initial": "calc(100dvh - 2rem)",
         "home-page-md": "calc(100dvh - 7rem)",
       },
+      keyframes: {
+        moveUp: {
+          "0%, 12.33%, 100%": { transform: "translateY(0)" }, // 1s of moving up and 5s of staying still
+          "4.16%": { transform: "translateY(-5px)" }, // At 1s (1/6 of 6s) it's at the top
+        },
+      },
+      animation: {
+        moveUp: "moveUp 4s ease-in-out infinite",
+      },
     },
   },
   plugins: [],
 };
+
 export default config;
