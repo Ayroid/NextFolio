@@ -19,7 +19,7 @@ const EducationSection = () => {
             course="Bachelor of Technology in Computer Science and Engineering"
             specialization="Specialization in DevOps"
             designation="Undergraduate Student"
-            result="CGPA - 8.0"
+            result="CGPA - 8.78"
             educationLevel="College"
             yearOfStudy="2021 - 2025"
           />
