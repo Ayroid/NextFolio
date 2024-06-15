@@ -10,6 +10,7 @@ interface Props {
   description: string;
   link: string;
   date: string;
+  isVisible?: boolean;
 }
 
 const BlogCard = ({
@@ -19,9 +20,14 @@ const BlogCard = ({
   description,
   link,
   date,
+  isVisible = true,
 }: Props) => {
   return (
-    <a href={link} target="_blank">
+    <a
+      href={link}
+      target="_blank"
+      className={`${isVisible ? "block" : "hidden"}`}
+    >
       <Flex
         align="start"
         justify="center"

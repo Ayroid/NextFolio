@@ -27,7 +27,7 @@ const blogData = [
   },
   {
     imageurl: DockerizeMERN,
-    category: "Development",
+    category: "DevOps",
     title: "Dockerize & Deploy a MERN Stack application on AWS EC2",
     description:
       "Learn to efficiently dockerize and deploy MERN applications on AWS EC2. Streamline your deployment process and elevate your development workflow.",
