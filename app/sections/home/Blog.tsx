@@ -38,7 +38,7 @@ const blogData = [
 
 const BlogSection = () => {
   return (
-    <Container className="mx-8 md:mx-4">
+    <Container className="mx-4 md:mx-4">
       <Flex
         justify="center"
         align="center"

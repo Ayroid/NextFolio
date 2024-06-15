@@ -37,7 +37,7 @@ const ProjectCard = ({
   timeperiod,
 }: Props) => {
   return (
-    <Container className="contain-content">
+    <Container>
       <Flex
         gap="8"
         align="start"
@@ -75,7 +75,7 @@ const ProjectCard = ({
             <LinkButton link={link} text="Read More" />
             <Separator orientation="vertical" size="4" ml="5" />
             <Separator orientation="vertical" size="4" mr="5" />
-            <Flex gap="5">
+            <Flex gap="5" align="center">
               {githublink && (
                 <Tooltip content="GitHub Repository">
                   <a href={githublink} target="_blank">
