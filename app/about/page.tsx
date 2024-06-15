@@ -3,6 +3,7 @@ import {
   AboutSection,
   SkillsSection,
   ExperienceSection,
+  EducationSection,
 } from "@/app/sections/about";
 
 const AboutPage = () => {
@@ -10,6 +11,9 @@ const AboutPage = () => {
     <Container className="space-y-96">
       <Box className="mb-36 mt-24">
         <AboutSection />
+      </Box>
+      <Box className="mb-36">
+        <EducationSection />
       </Box>
       <Box className="mb-36">
         <SkillsSection />

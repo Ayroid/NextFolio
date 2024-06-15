@@ -7,12 +7,7 @@ import Link from "next/link";
 const ExperienceSection = () => {
   return (
     <Container className="mx-8 md:mx-4">
-      <Flex
-        justify="center"
-        align="start"
-        direction="column"
-        className="flex-wrap-reverse lg:flex-nowrap"
-      >
+      <Flex justify="center" align="start" direction="column">
         <Badge color="#ffcd95" text="Carrer" />
         <SectionHeading text="Work" highlight="Experience" inline />
         <Flex
@@ -29,13 +24,17 @@ const ExperienceSection = () => {
           />
           <Flex justify="center" align="center" gap="5">
             <LinkButton link="/contact" text="Hire Me" />
-            <Separator orientation="vertical" size="4" />
+            <Separator
+              orientation="vertical"
+              size="4"
+              className="rounded-lg border-[1px] border-zinc-800"
+            />
             <Link
               href="https://drive.google.com/file/d/1NHGjGAnMKICQkJ9BqcvJtb2-eu6pY-Gj/view?usp=sharing"
               target="_blank"
             >
               <Tooltip content="Resume">
-                <TiDocumentText className="animate-moveUp size-8 md:size-10" />
+                <TiDocumentText className="size-8 animate-moveUp md:size-10" />
               </Tooltip>
             </Link>
           </Flex>

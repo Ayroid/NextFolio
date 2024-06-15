@@ -2,7 +2,7 @@ import React from "react";
 import { Heading, Box } from "@radix-ui/themes";
 
 interface Props {
-  text: string;
+  text?: string;
   highlight?: string;
   inline?: boolean;
   textCenter?: boolean;
