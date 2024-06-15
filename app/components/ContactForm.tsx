@@ -8,6 +8,8 @@ import { LuMail } from "react-icons/lu";
 import { MdOutlineDesignServices } from "react-icons/md";
 import { RiSettings4Line } from "react-icons/ri";
 import { z } from "zod";
+import axios from "axios";
+import toast, { Toaster } from "react-hot-toast";
 
 import {
   FormErrorMessage,
@@ -52,9 +54,18 @@ const ContactForm = () => {
   ];
 
   const submitContactForm = async (data: contactForm) => {
-    setIsSubmitting(true);
-    console.log(data);
-    setIsSubmitting(false);
+    try {
+      setIsSubmitting(true);
+      await axios.post("/api/contact", data);
+      toast.success("Message sent successfully!", {
+        duration: 4000,
+      });
+      formMethods.reset();
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -146,12 +157,13 @@ const ContactForm = () => {
             variant="soft"
             radius="large"
             size="3"
-            className="hover:cursor-pointer"
+            className="hover:cursor-pointer disabled:cursor-not-allowed"
           >
             {"Send"} {isSubmitting && <LoadingSpinner />}
           </Button>
         </form>
       </FormProvider>
+      <Toaster />
     </Flex>
   );
 };
