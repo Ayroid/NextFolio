@@ -59,6 +59,15 @@ const SkillsSection = () => {
     return categories.includes(categorySelected) || categorySelected === "All";
   };
 
+  const itemValueMap = [
+    { value: "All", text: "All" },
+    { value: "Frontend", text: "Frontend" },
+    { value: "Backend", text: "Backend" },
+    { value: "Language", text: "Languages" },
+    { value: "DevOps", text: "DevOps" },
+    { value: "Design", text: "Design" },
+  ];
+
   return (
     <Container className="mx-8 md:mx-4">
       <Flex justify="center" align="center" direction="column">
@@ -67,6 +76,8 @@ const SkillsSection = () => {
         <RadioCardSwitch
           activeCategory={categorySelected}
           changeCategory={handleCategoryChange}
+          itemValueMap={itemValueMap}
+          columnCount={{ initial: "2", sm: "6" }}
         />
         <Flex
           justify="center"

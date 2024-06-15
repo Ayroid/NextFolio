@@ -5,35 +5,33 @@ import React from "react";
 
 interface Props {
   activeCategory: string;
+  itemValueMap: { value: string; text: string }[];
+  columnCount: { initial: string; sm: string };
   changeCategory: (category: string) => void;
 }
 
-const RadioCardSwitch = ({ activeCategory, changeCategory }: Props) => {
+const RadioCardSwitch = ({
+  activeCategory,
+  itemValueMap,
+  columnCount: { initial, sm },
+  changeCategory,
+}: Props) => {
   return (
     <Flex className="-mt-5 mb-10 max-w-full">
       <RadioCards.Root
         value={activeCategory}
         onValueChange={(value) => changeCategory(value)}
-        columns={{ initial: "2", sm: "6" }}
+        columns={{ initial, sm }}
       >
-        <RadioCards.Item value="All" className="hover:cursor-pointer">
-          <Text weight="bold">All</Text>
-        </RadioCards.Item>
-        <RadioCards.Item value="Frontend" className="hover:cursor-pointer">
-          <Text weight="bold">Frontend</Text>
-        </RadioCards.Item>
-        <RadioCards.Item value="Backend" className="hover:cursor-pointer">
-          <Text weight="bold">Backend</Text>
-        </RadioCards.Item>
-        <RadioCards.Item value="Language" className="hover:cursor-pointer">
-          <Text weight="bold">Languages</Text>
-        </RadioCards.Item>
-        <RadioCards.Item value="DevOps" className="hover:cursor-pointer">
-          <Text weight="bold">DevOps</Text>
-        </RadioCards.Item>
-        <RadioCards.Item value="Design" className="hover:cursor-pointer">
-          <Text weight="bold">Design</Text>
-        </RadioCards.Item>
+        {itemValueMap.map((item) => (
+          <RadioCards.Item
+            key={item.value}
+            value={item.value}
+            className="hover:cursor-pointer"
+          >
+            <Text weight="bold">{item.text}</Text>
+          </RadioCards.Item>
+        ))}
       </RadioCards.Root>
     </Flex>
   );
