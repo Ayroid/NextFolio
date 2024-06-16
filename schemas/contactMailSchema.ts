@@ -1,24 +1,6 @@
 import z, { string } from "zod";
 
-enum InquiryType {
-  General = "General Inquiry",
-  Hiring = "Hiring",
-  Support = "Project Proposal",
-  Collaboration = "Collaboration",
-  Feedback = "Feedback",
-  Other = "Other",
-}
-
-enum ServiceType {
-  WebDevelopment = "Web Development",
-  FrontendDevelopment = "Frontend Development",
-  BackendDevelopment = "Backend Development",
-  DevOps = "DevOps",
-  Consulting = "Consulting",
-  Other = "Other",
-}
-
-const contactFormSchema = z.object({
+const contactMailSchema = z.object({
   fullname: z
     .string()
     .min(3, "Name should be atleast 3 characters long")
@@ -39,4 +21,4 @@ const contactFormSchema = z.object({
     .max(5000, "Message too long"),
 });
 
-export { contactFormSchema, ServiceType, InquiryType };
+export { contactMailSchema };

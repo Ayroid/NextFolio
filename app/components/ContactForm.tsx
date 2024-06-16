@@ -17,14 +17,14 @@ import {
   FormTextField,
   LoadingSpinner,
 } from "@/app/components";
-import { contactSchema } from "@/schemas";
+import { contactFormSchema } from "@/schemas";
 import { useState } from "react";
 
-export type contactForm = z.infer<typeof contactSchema>;
+export type contactForm = z.infer<typeof contactFormSchema>;
 
 const ContactForm = () => {
   const formMethods = useForm<contactForm>({
-    resolver: zodResolver(contactSchema),
+    resolver: zodResolver(contactFormSchema),
   });
 
   const {
