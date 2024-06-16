@@ -5,12 +5,12 @@ import { contactMailSchema } from "@/schemas/contactMailSchema";
 import { NextRequest, NextResponse } from "next/server";
 
 const transporter = nodemailer.createTransport({
-  host: "smtp.gmail.com",
+  host: process.env.EMAIL_HOST,
   port: 465,
   secure: true,
   auth: {
-    user: "parko.user.assistance@gmail.com",
-    pass: "esszpdjpxeozaayc",
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS,
   },
 });
 
@@ -32,16 +32,13 @@ const POST = async (request: NextRequest) => {
   );
 
   const options = {
-    from: "parko.user.assistance@gmail.com",
+    from: process.env.EMAIL_USER,
     to: validation.data.email,
     subject: "Message Received!",
     html: emailHtml,
   };
 
-  // Send the email
   await transporter.sendMail(options);
-
-  // Return a success response
   return NextResponse.json("Mail Sent Successfully!");
 };
 
