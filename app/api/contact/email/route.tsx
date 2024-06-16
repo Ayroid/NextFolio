@@ -1,6 +1,6 @@
 import { render } from "@react-email/render";
 import nodemailer from "nodemailer";
-import WelcomeTemplate from "@/email/contactReply";
+import WelcomeTemplate from "@/emails/contactReply";
 import { contactMailSchema } from "@/schemas/contactMailSchema";
 import { NextRequest, NextResponse } from "next/server";
 
