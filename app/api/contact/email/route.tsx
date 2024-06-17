@@ -1,6 +1,6 @@
 import { render } from "@react-email/render";
 import nodemailer from "nodemailer";
-import WelcomeTemplate from "@/emails/contactReply";
+import ContactReply from "@/emails/contactReply";
 import { contactMailSchema } from "@/schemas/contactMailSchema";
 import { NextRequest, NextResponse } from "next/server";
 
@@ -23,12 +23,7 @@ const POST = async (request: NextRequest) => {
   }
 
   const emailHtml = render(
-    <WelcomeTemplate
-      fullname={validation.data.fullname}
-      inquiryType={validation.data.inquiryType}
-      serviceType={validation.data.serviceType}
-      message={validation.data.message}
-    />,
+    <ContactReply fullname={validation.data.fullname} />,
   );
 
   const options = {
