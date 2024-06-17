@@ -13,7 +13,9 @@ import { BackToTop } from "@/app/components";
 export default function Home() {
   return (
     <Container className="space-y-96">
-      <HomeSection />
+      <Box className="mb-36 mt-12 md:mb-60 md:mt-0">
+        <HomeSection />
+      </Box>
       <Box className="mb-36">
         <ServicesSection />
       </Box>

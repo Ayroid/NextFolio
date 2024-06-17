@@ -8,7 +8,7 @@ const HomeSection = () => {
       align="center"
       direction="column"
       gap="5"
-      className="h-home-page-initial py-24 md:h-home-page-md min-h-[50rem]"
+      className="h-home-page-initial py-24 md:h-home-page-md"
     >
       <Flex direction="column" align="center" gap="3">
         <Avatar />

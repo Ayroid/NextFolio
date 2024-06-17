@@ -17,8 +17,8 @@ const config: Config = {
         "radix-accent": "var(--accent-9)",
       },
       height: {
-        "home-page-initial": "50rem",
-        "home-page-md": "100dvh",
+        "home-page-initial": "100%",
+        "home-page-md": "100%",
       },
       keyframes: {
         moveUp: {
