@@ -71,7 +71,7 @@ const ContactForm = () => {
   return (
     <Flex
       direction="column"
-      className="top-light-shadow w-[23rem] rounded-2xl bg-neutral-900 px-8 py-6 md:w-[47.5rem]"
+      className="top-light-shadow mx-4 w-full rounded-2xl bg-neutral-900 px-8 py-6"
     >
       <Text className="text-xl font-semibold">React out to me!</Text>
       <FormProvider {...formMethods}>

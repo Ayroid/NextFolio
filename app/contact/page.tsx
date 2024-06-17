@@ -14,7 +14,7 @@ const ContactPage = () => {
       <Flex justify="center" align="center" direction="column">
         <Badge text="Contact" color="#e3b785" />
         <SectionHeading text="Contact" highlight="me" inline textCenter />
-        <Flex gap="5" justify="center" align="center" direction="column">
+        <Flex gap="5" justify="center" align="center" direction="column" mx="5">
           <Flex gap="5" justify="center" align="center" wrap="wrap">
             <ContactCard
               title="Mail"

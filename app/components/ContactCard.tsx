@@ -12,7 +12,7 @@ const ContactCard = ({ Icon, title, value }: Props) => {
     <Flex
       gap="5"
       align="center"
-      className="top-light-shadow w-[23rem] rounded-2xl bg-neutral-900 px-8 py-6"
+      className="top-light-shadow w-full rounded-2xl bg-neutral-900 px-8 py-6 lg:w-[23rem]"
     >
       <Box className="top-light-shadow rounded-full bg-neutral-950 p-4">
         {Icon}
