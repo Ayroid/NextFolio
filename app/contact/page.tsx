@@ -10,7 +10,7 @@ import { MdPhone } from "react-icons/md";
 
 const ContactPage = () => {
   return (
-    <Container className="pt-12 pb-24 md:py-24">
+    <Container className="py-32 md:py-24">
       <Flex justify="center" align="center" direction="column">
         <Badge text="Contact" color="#e3b785" />
         <SectionHeading text="Contact" highlight="me" inline textCenter />
