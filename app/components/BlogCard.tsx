@@ -32,7 +32,7 @@ const BlogCard = ({
         align="center"
         justify="center"
         gap="6"
-        className="top-light-shadow group min-h-96 max-w-[24rem] cursor-pointer flex-col rounded-2xl bg-neutral-900 p-4 transition-colors duration-300 ease-out hover:bg-neutral-800 lg:max-w-full lg:flex-row lg:p-8"
+        className="top-light-shadow group mx-4 min-h-96 max-w-[24rem] cursor-pointer flex-col rounded-2xl bg-neutral-900 p-4 transition-colors duration-300 ease-out hover:bg-neutral-800 md:mx-0 lg:max-w-full lg:flex-row lg:p-8"
       >
         <Flex
           justify="center"

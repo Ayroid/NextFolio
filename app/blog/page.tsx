@@ -65,7 +65,7 @@ const BlogPage = () => {
   ];
 
   return (
-    <Container className="mb-36 mt-24 space-y-96">
+    <Container className="pt-12 pb-24 md:py-24 space-y-96">
       <Flex justify="center" align="center" direction="column">
         <Badge color="#ffcd95" text="Learnings" />
         <SectionHeading text="Articles" highlight="& Blogs" inline />
