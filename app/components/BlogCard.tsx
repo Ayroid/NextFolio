@@ -32,7 +32,7 @@ const BlogCard = ({
         align="center"
         justify="center"
         gap="6"
-        className="top-light-shadow group mx-4 min-h-96 max-w-[24rem] cursor-pointer flex-col rounded-2xl bg-neutral-900 p-4 transition-colors duration-300 ease-out hover:bg-neutral-800 md:mx-0 lg:max-w-full lg:flex-row lg:p-8"
+        className="top-light-shadow highlight-dark hover:highlight-dark-hover group mx-4 min-h-96 max-w-[24rem] cursor-pointer flex-col rounded-2xl p-4 transition-colors duration-300 ease-out md:mx-0 lg:max-w-full lg:flex-row lg:p-8"
       >
         <Flex
           justify="center"
@@ -42,7 +42,7 @@ const BlogCard = ({
           <Image
             src={imageurl}
             alt="profile"
-            className="w-full rounded-xl transition-transform duration-300 ease-out group-hover:scale-125 sm:max-h-[30rem]"
+            className="w-full rounded-xl sm:max-h-[30rem]"
           />
         </Flex>
         <Flex direction="column" gap="4" className="w-fit lg:w-7/12">
@@ -59,7 +59,7 @@ const BlogCard = ({
           >
             {title}
           </Heading>
-          <Text className="text-gray-accent text-lg">{description}</Text>
+          <Text className="text-lg text-gray-accent">{description}</Text>
           <Text className="mt-4">
             Read More{" "}
             <IoIosArrowRoundForward

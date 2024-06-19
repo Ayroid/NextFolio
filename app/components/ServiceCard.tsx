@@ -13,9 +13,9 @@ const ServiceCard = ({ Icon, heading, text }: Props) => {
       direction="column"
       align="start"
       justify="start"
-      className="top-light-shadow min-h-80 max-w-[23rem] rounded-2xl bg-neutral-900 p-8 transition-colors duration-300 ease-out hover:bg-neutral-800 md:min-w-[23rem]"
+      className="top-light-shadow group min-h-80 max-w-[23rem] rounded-2xl highlight-dark p-8 transition-colors duration-300 ease-out hover:highlight-dark-hover md:min-w-[23rem]"
     >
-      <Box className="top-light-shadow mb-2 rounded-full bg-neutral-950 p-4">
+      <Box className="top-light-shadow mb-2 rounded-full highlight-dark-hover p-4 transition-colors duration-300 ease-out group-hover:highlight-dark">
         {Icon}
       </Box>
       <Heading
@@ -35,7 +35,7 @@ const ServiceCard = ({ Icon, heading, text }: Props) => {
       >
         {heading}
       </Heading>
-      <Text className="text-gray-accent my-2 text-lg">{text}</Text>
+      <Text className="my-2 text-lg text-gray-accent">{text}</Text>
     </Flex>
   );
 };

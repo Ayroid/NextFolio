@@ -27,10 +27,18 @@ body {
   }
 
   .top-light-shadow {
-    @apply border-[2px] border-neutral-900 border-t-neutral-800 border-opacity-75;
+    @apply border-[2px] border-none border-t-neutral-900 border-opacity-75;
   }
 
-  .text-gray-accent {
-    @apply text-zinc-400;
+  .bg-dark {
+    @apply bg-black;
+  }
+
+  .highlight-dark {
+    @apply bg-neutral-950;
+  }
+
+  .highlight-dark-hover {
+    @apply bg-neutral-900;
   }
 }

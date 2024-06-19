@@ -33,7 +33,7 @@ const ExperienceCard = ({
     >
       <Flex
         direction="column"
-        className={`order-2 h-fit lg:order-1 lg:w-[25rem]`}
+        className={`z-10 order-2 h-fit lg:order-1 lg:w-[25rem]`}
       >
         <Heading
           size="6"
@@ -43,7 +43,7 @@ const ExperienceCard = ({
         </Heading>
         <Text
           size="3"
-          className={`text-gray-accent w-full text-left font-semibold italic ${reverse ? "lg:text-left" : "lg:text-right"}`}
+          className={`w-full text-left font-semibold italic text-gray-accent ${reverse ? "lg:text-left" : "lg:text-right"}`}
         >
           {designation}
         </Text>
@@ -53,7 +53,7 @@ const ExperienceCard = ({
         align="center"
         direction="column"
         position={{ initial: "absolute", md: "relative" }}
-        className="-z-10 mx-[11.5rem] -mt-5 h-[21rem] lg:order-2 lg:mx-24 lg:mt-0 lg:h-full lg:w-auto"
+        className="mx-[11.5rem] -mt-5 h-[21rem] lg:order-2 lg:mx-24 lg:mt-0 lg:h-full lg:w-auto"
       >
         <Box className="h-3 w-3 rounded-full bg-radix-accent" />
         {!last && <Separator orientation="vertical" size="4" />}
@@ -62,7 +62,7 @@ const ExperienceCard = ({
         justify="between"
         align="start"
         direction="column"
-        className="top-light-shadow order-3 h-56 w-[23rem] rounded-2xl bg-neutral-900 p-6 transition-colors duration-300 ease-out hover:bg-neutral-800 lg:order-3 lg:min-w-[25rem]"
+        className="top-light-shadow highlight-dark hover:highlight-dark-hover z-10 order-3 h-56 w-[23rem] rounded-2xl p-6 transition-colors duration-300 ease-out lg:order-3 lg:min-w-[25rem]"
       >
         <Flex direction="column">
           <Flex align="start" gap="4">
@@ -81,11 +81,11 @@ const ExperienceCard = ({
           <Text mt="2" size="3" className="text-gray-accent">
             {course}
           </Text>
-          <Text size="3" className="text-gray-accent italic">
+          <Text size="3" className="italic text-gray-accent">
             {specialization}
           </Text>
         </Flex>
-        <Text size="3" className="text-gray-accent font-semibold italic">
+        <Text size="3" className="font-semibold italic text-gray-accent">
           {result}
         </Text>
       </Flex>

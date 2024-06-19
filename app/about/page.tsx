@@ -8,7 +8,7 @@ import {
 
 const AboutPage = () => {
   return (
-    <Container className="space-y-96">
+    <Container className="space-y-96 bg-dark">
       <Box className="mb-36 mt-24">
         <AboutSection />
       </Box>

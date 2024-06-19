@@ -7,7 +7,7 @@ import SectionHeading from "./SectionHeading";
 
 const Footer = () => {
   return (
-    <Container>
+    <Container className="bg-dark">
       <Flex
         justify="center"
         align="center"

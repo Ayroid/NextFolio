@@ -15,6 +15,7 @@ const config: Config = {
       },
       colors: {
         "radix-accent": "var(--accent-9)",
+        "gray-accent": "#a1a1aa",
       },
       height: {
         "home-page-initial": "100%",

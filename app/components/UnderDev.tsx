@@ -4,7 +4,7 @@ import { TbTools } from "react-icons/tb";
 
 const UnderDev = () => {
   return (
-    <Container className="h-home-page-initial py-24 md:h-home-page-md">
+    <Container className="bg-dark h-home-page-initial py-24 md:h-home-page-md">
       <Flex
         justify="center"
         align="center"

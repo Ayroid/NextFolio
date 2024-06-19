@@ -19,7 +19,7 @@ const servicesData = [
     Icon: <TbServer2 color="#ffcd95" className="size-7 md:size-8" />,
     heading: "Robust Backend",
     text: (
-      <p className="md:text-base">
+      <p>
         Specialized in building scalable and efficient backend services with{" "}
         <strong>Node.js</strong>, <strong>Express</strong>, and{" "}
         <strong>MongoDB</strong> using <strong>RESTful APIs</strong> and{" "}
