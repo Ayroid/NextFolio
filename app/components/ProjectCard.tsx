@@ -42,16 +42,17 @@ const ProjectCard = ({
         gap="8"
         align="start"
         justify="center"
-        className="flex-wrap lg:flex-nowrap"
+        direction="column"
+        className="top-light-shadow highlight-dark hover:highlight-dark-hover flex-wrap rounded-2xl p-4 transition-colors duration-300 ease-out lg:flex-nowrap lg:p-8"
       >
-        <Box className="rounded-xl md:w-6/12">
+        <Box className="rounded-xl">
           <Image
             src={image}
             alt="Project Image"
-            className="w-full rounded-xl sm:max-h-[30rem]"
+            className="w-full rounded-xl"
           />
         </Box>
-        <Flex direction="column" justify="between" className="md:w-6/12">
+        <Flex direction="column" justify="between" className="">
           <Flex direction="column" gap="4">
             <Flex align="center" gap="5">
               <BadgeCategory color="#9b00ff" text={category} />
@@ -66,12 +67,12 @@ const ProjectCard = ({
             >
               {title}
             </Heading>
-            <Text className="text-gray-accent text-lg">{description}</Text>
-            <Box className="text-gray-accent text-lg">
+            <Text className="text-lg text-gray-accent">{description}</Text>
+            <Box className="text-lg text-gray-accent">
               <Strong className="text-white">Tech Stack:</Strong> {techStack}
             </Box>
           </Flex>
-          <Flex mt="5" pb="7" align="center">
+          <Flex mt="5" align="center">
             <LinkButton link={link} text="Read More" />
             <Separator orientation="vertical" size="4" ml="5" />
             <Separator orientation="vertical" size="4" mr="5" />

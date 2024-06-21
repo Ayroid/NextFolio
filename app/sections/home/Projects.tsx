@@ -1,6 +1,6 @@
 import { Badge, ProjectCard, SectionHeading } from "@/app/components";
 import { Container, Flex } from "@radix-ui/themes";
-import VisualRift from "@/public/images/projects/visualrift.jpeg";
+import VisualRift from "@/public/images/projects/visualrift.jpg";
 
 const Projects = () => {
   return (
@@ -13,7 +13,7 @@ const Projects = () => {
           category="Full Stack"
           title="Visual Rift - Microservices Orchestration Engine"
           description="Visual-Rift streamlines multi-cloud application deployment using intuitive UML diagrams, simplifying complex setups with a user-friendly interface. It efficiently manages microservices, enhancing workflow efficiency."
-          // demolink="https://visualrift.studio"
+          demolink="https://visualrift.studio"
           githublink="https://github.com/ayroid"
           link="/projects/visual-rift"
           techStack="Next.js, NodeJS, MongoDB, TailwindCSS, Radix UI, ShadCN, Bash, AWS, Docker, Kubernetes, Terraform, Ansible, and more."
