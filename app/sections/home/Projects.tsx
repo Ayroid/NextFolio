@@ -41,9 +41,9 @@ const Projects = () => {
               content: "Backend Repository",
             },
           ]}
-          desclink="/projects/visual-rift"
+          desclink="/projects/upescsa"
           techStack="ReactJS, ExpressJS, NodeJS, MongoDB, AWS, Docker, Bash & Nginx."
-          timeperiod="Jan 2024 - Present"
+          timeperiod="Dec 2023 - Jan 2023"
         />
       </Flex>
     </Container>
