@@ -19,9 +19,9 @@ interface Props {
   title: string;
   description: string;
   techStack: string;
-  githublink?: string;
+  githublink?: { link: string; content: string }[];
   demolink?: string;
-  link: string;
+  desclink: string;
   timeperiod: string;
 }
 
@@ -33,7 +33,7 @@ const ProjectCard = ({
   techStack,
   githublink,
   demolink,
-  link,
+  desclink,
   timeperiod,
 }: Props) => {
   return (
@@ -73,17 +73,17 @@ const ProjectCard = ({
             </Box>
           </Flex>
           <Flex mt="5" align="center">
-            <LinkButton link={link} text="Read More" />
+            <LinkButton link={desclink} text="Read More" />
             <Separator orientation="vertical" size="4" ml="5" />
             <Separator orientation="vertical" size="4" mr="5" />
             <Flex gap="5" align="center">
-              {githublink && (
-                <Tooltip content="GitHub Repository">
-                  <a href={githublink} target="_blank">
+              {githublink?.map((repository) => (
+                <Tooltip key={repository.link} content={repository.content}>
+                  <a href={repository.link} target="_blank">
                     {<SiGithub size="30" />}
                   </a>
                 </Tooltip>
-              )}
+              ))}
               {demolink && (
                 <Tooltip content="Live Demo">
                   <a href={demolink} target="_blank">
