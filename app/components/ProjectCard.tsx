@@ -22,6 +22,7 @@ interface Props {
   demolink?: string;
   desclink: string;
   timeperiod: string;
+  isVisible?: boolean;
 }
 
 const ProjectCard = ({
@@ -34,9 +35,10 @@ const ProjectCard = ({
   demolink,
   desclink,
   timeperiod,
+  isVisible = true,
 }: Props) => {
   return (
-    <Container>
+    <Container className={`${isVisible ? "block" : "hidden"}`}>
       <Flex
         gap="8"
         align="start"
@@ -73,7 +75,7 @@ const ProjectCard = ({
           </Flex>
           <Flex mt="5" align="center">
             <LinkButton link={desclink} text="Read More" />
-            <Flex align="center" className="ml-5 gap-5">
+            <Flex align="center" className="ml-3 gap-3 md:ml-5 md:gap-5">
               {githublink?.map((repository) => (
                 <Tooltip key={repository.link} content={repository.content}>
                   <a href={repository.link} target="_blank">
