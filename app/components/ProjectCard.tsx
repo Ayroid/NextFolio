@@ -4,14 +4,13 @@ import {
   Container,
   Flex,
   Heading,
-  Text,
-  Separator,
   Strong,
+  Text,
   Tooltip,
 } from "@radix-ui/themes";
 import Image, { StaticImageData } from "next/image";
-import { SiGithub } from "react-icons/si";
 import { FiExternalLink } from "react-icons/fi";
+import { SiGithub } from "react-icons/si";
 
 interface Props {
   image: StaticImageData;
@@ -74,9 +73,7 @@ const ProjectCard = ({
           </Flex>
           <Flex mt="5" align="center">
             <LinkButton link={desclink} text="Read More" />
-            <Separator orientation="vertical" size="4" ml="5" />
-            <Separator orientation="vertical" size="4" mr="5" />
-            <Flex gap="5" align="center">
+            <Flex align="center" className="ml-5 gap-5">
               {githublink?.map((repository) => (
                 <Tooltip key={repository.link} content={repository.content}>
                   <a href={repository.link} target="_blank">
