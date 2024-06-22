@@ -22,7 +22,7 @@ interface Props {
   demolink?: string;
   desclink: string;
   timeperiod: string;
-  isVisible?: boolean;
+  isVisible: boolean;
 }
 
 const ProjectCard = ({
