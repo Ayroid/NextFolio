@@ -46,7 +46,7 @@ const PortfolioPage = () => {
           content: "Github Repository",
         },
       ],
-      desclink: "/portfolio/projects/visual-rift",
+      desclink: "/portfolio/visual-rift",
       techStack:
         "Next.js, NodeJS, MongoDB, TailwindCSS, Radix UI, ShadCN, Bash, AWS, Docker, Kubernetes, Terraform, Ansible, and more.",
       timeperiod: "Jan 2024 - Present",
@@ -69,7 +69,7 @@ const PortfolioPage = () => {
           content: "Backend Repository",
         },
       ],
-      desclink: "/portfolio/projects/upescsa",
+      desclink: "/portfolio/upescsa",
       techStack:
         "ReactJS, ExpressJS, NodeJS, MongoDB, AWS, Docker, Bash & Nginx.",
       timeperiod: "Dec 2023 - Jan 2023",
@@ -84,7 +84,7 @@ const PortfolioPage = () => {
         direction="column"
         className="mx-8 md:mx-4"
       >
-        <Badge color="#ffcd95" text="Projects" />
+        <Badge color="#9b00ff" text="Projects" />
         <SectionHeading
           text="Projects"
           highlight="Portfolio"

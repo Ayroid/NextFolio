@@ -1,4 +1,9 @@
-import { Badge, ProjectCard, SectionHeading } from "@/app/components";
+import {
+  Badge,
+  LinkButton,
+  ProjectCard,
+  SectionHeading,
+} from "@/app/components";
 import { Container, Flex } from "@radix-ui/themes";
 import VisualRift from "@/public/images/projects/visualrift.jpg";
 import UPESCSA from "@/public/images/projects/upescsa.jpg";
@@ -17,7 +22,7 @@ const projectData = [
         content: "Github Repository",
       },
     ],
-    desclink: "/portfolio/projects/visual-rift",
+    desclink: "/portfolio/visual-rift",
     techStack:
       "Next.js, NodeJS, MongoDB, TailwindCSS, Radix UI, ShadCN, Bash, AWS, Docker, Kubernetes, Terraform, Ansible, and more.",
     timeperiod: "Jan 2024 - Present",
@@ -39,7 +44,7 @@ const projectData = [
         content: "Backend Repository",
       },
     ],
-    desclink: "/portfolio/projects/upescsa",
+    desclink: "/portfolio/upescsa",
     techStack:
       "ReactJS, ExpressJS, NodeJS, MongoDB, AWS, Docker, Bash & Nginx.",
     timeperiod: "Dec 2023 - Jan 2023",
@@ -66,6 +71,7 @@ const Projects = () => {
             timeperiod={project.timeperiod}
           />
         ))}
+        <LinkButton link="/portfolio" text="Discover More Projects" />
       </Flex>
     </Container>
   );
