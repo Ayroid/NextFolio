@@ -13,19 +13,15 @@ import {
   Text,
 } from "@react-email/components";
 
-interface VercelInviteUserEmailProps {
+interface ContactReplyMailProps {
   fullname: string;
   portfolioLink?: string;
 }
 
-const baseUrl = process.env.VERCEL_URL
-  ? `https://${process.env.VERCEL_URL}`
-  : "";
-
-export const VercelInviteUserEmail = ({
+export const ContactReplyMail = ({
   fullname,
   portfolioLink = "https://ayroid.vercel.app/portfolio",
-}: VercelInviteUserEmailProps) => {
+}: ContactReplyMailProps) => {
   const previewText = `Message Received`;
 
   return (
@@ -85,9 +81,9 @@ export const VercelInviteUserEmail = ({
   );
 };
 
-VercelInviteUserEmail.PreviewProps = {
+ContactReplyMail.PreviewProps = {
   fullname: "Ayush Singh Kushwah",
   portfolioLink: "https://ayroid.vercel.app/portfolio",
-} as VercelInviteUserEmailProps;
+} as ContactReplyMailProps;
 
-export default VercelInviteUserEmail;
+export default ContactReplyMail;

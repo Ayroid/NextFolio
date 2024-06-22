@@ -25,7 +25,15 @@ const POST = async (request: NextRequest) => {
     return NextResponse.json("Error Sending Mail", { status: 400 });
   }
 
-  axios.post("http://localhost:3000/api/contact/email", {
+  axios.post("http://localhost:3000/api/contact/email/reply", {
+    fullname: body.fullname,
+    email: body.email,
+    serviceType: body.serviceType,
+    inquiryType: body.inquiryType,
+    message: body.message,
+  });
+
+  axios.post("http://localhost:3000/api/contact/email/alert", {
     fullname: body.fullname,
     email: body.email,
     serviceType: body.serviceType,
