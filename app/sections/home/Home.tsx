@@ -11,10 +11,10 @@ const HomeSection = () => {
   const textRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLDivElement>(null);
 
-  useGsapAnimation(avatarRef, 0.15);
-  useGsapAnimation(headingRef, 0.2);
-  useGsapAnimation(textRef, 0.25);
-  useGsapAnimation(buttonRef, 0.3);
+  useGsapAnimation(avatarRef);
+  useGsapAnimation(headingRef, 0.05);
+  useGsapAnimation(textRef, 0.10);
+  useGsapAnimation(buttonRef, 0.15);
 
   return (
     <Flex
