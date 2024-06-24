@@ -10,6 +10,7 @@ import { Container, Flex } from "@radix-ui/themes";
 import { useState } from "react";
 import { TbTools } from "react-icons/tb";
 import projectData from "@/data/projects";
+import { Metadata } from "next";
 
 const PortfolioPage = () => {
   const [categorySelected, setCategorySelected] = useState("Highlighted");
@@ -81,6 +82,11 @@ const PortfolioPage = () => {
       </Flex>
     </Container>
   );
+};
+
+export const metadata: Metadata = {
+  title: "Ayroid | Portfolio",
+  description: "Explore Ayush's portfolio.",
 };
 
 export default PortfolioPage;

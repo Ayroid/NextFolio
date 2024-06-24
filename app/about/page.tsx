@@ -5,10 +5,11 @@ import {
   ExperienceSection,
   EducationSection,
 } from "@/app/sections/about";
+import { Metadata } from "next";
 
 const AboutPage = () => {
   return (
-    <Container className="space-y-96 bg-dark">
+    <Container className="bg-dark space-y-96">
       <Box className="mb-36 mt-24">
         <AboutSection />
       </Box>
@@ -23,6 +24,12 @@ const AboutPage = () => {
       </Box>
     </Container>
   );
+};
+
+export const metadata: Metadata = {
+  title: "Ayroid | About",
+  description:
+    "Learn more about Ayroid, his skills, experience, and education.",
 };
 
 export default AboutPage;

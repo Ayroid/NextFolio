@@ -9,6 +9,7 @@ import {
 import { Container, Flex } from "@radix-ui/themes";
 import { useState } from "react";
 import blogData from "@/data/blogs";
+import { Metadata } from "next";
 
 const BlogPage = () => {
   const [categorySelected, setCategorySelected] = useState("Highlighted");
@@ -55,6 +56,11 @@ const BlogPage = () => {
       </Flex>
     </Container>
   );
+};
+
+export const metadata: Metadata = {
+  title: "Ayroid | Blogs",
+  description: "Read Ayroid's articles and blogs.",
 };
 
 export default BlogPage;

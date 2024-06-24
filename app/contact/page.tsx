@@ -5,6 +5,7 @@ import {
   SectionHeading,
 } from "@/app/components";
 import { Container, Flex } from "@radix-ui/themes";
+import { Metadata } from "next";
 import { LuMail } from "react-icons/lu";
 import { MdPhone } from "react-icons/md";
 
@@ -32,6 +33,11 @@ const ContactPage = () => {
       </Flex>
     </Container>
   );
+};
+
+export const metadata: Metadata = {
+  title: 'Ayroid | Contact',
+  description: 'Contact Ayroid via mail or phone.'
 };
 
 export default ContactPage;
