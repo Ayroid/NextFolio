@@ -9,6 +9,7 @@ const Avatar = () => {
       radius="full"
       size="7"
       className="shadow-[0_0_90px_-20px] shadow-radix-accent"
+      alt="Profile Picture"
     />
   );
 };

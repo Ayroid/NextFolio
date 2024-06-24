@@ -25,9 +25,7 @@ const Navbar = () => {
     <Container className="highlight-dark md:bg-dark fixed z-50 flex h-20 w-full justify-center p-5 md:static md:h-28">
       <Flex justify="between" align="center">
         <Link href="/">
-          <Text className="w-20 text-xl font-bold">
-            AYROID
-          </Text>
+          <Text className="w-20 text-xl font-bold">AYROID</Text>
         </Link>
         <Flex
           className={`highlight-dark md:bg-dark fixed right-0 top-[4.3rem] h-full w-48 items-start px-5 transition-transform duration-500 md:static md:h-auto md:w-auto md:translate-x-0 md:transition-none ${
@@ -36,11 +34,14 @@ const Navbar = () => {
         >
           <ul className="my-7 flex w-full flex-col gap-7 md:flex-row md:items-center md:gap-12">
             {navItems.map(({ name, href }) => (
-              <Link key={name} href={href} onClick={toggleMenu}>
-                <li className="font-medium transition-colors hover:text-radix-accent">
+              <li
+                key={name}
+                className="font-medium transition-colors hover:text-radix-accent"
+              >
+                <Link href={href} onClick={toggleMenu}>
                   {name}
-                </li>
-              </Link>
+                </Link>
+              </li>
             ))}
           </ul>
         </Flex>

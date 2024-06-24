@@ -15,7 +15,7 @@ const projectData = [
         content: "Github Repository",
       },
     ],
-    desclink: "/portfolio/visual-rift",
+    desclink: "/portfolio/project/visualrift",
     techStack:
       "Next.js, NodeJS, MongoDB, TailwindCSS, Radix UI, ShadCN, Bash, AWS, Docker, Kubernetes, Terraform, Ansible, and more.",
     timeperiod: "Jan 2024 - Present",
@@ -38,7 +38,7 @@ const projectData = [
         content: "Backend Repository",
       },
     ],
-    desclink: "/portfolio/upescsa",
+    desclink: "/portfolio/project/upescsa",
     techStack:
       "ReactJS, ExpressJS, NodeJS, MongoDB, AWS, Docker, Bash & Nginx.",
     timeperiod: "Dec 2023 - Jan 2023",
