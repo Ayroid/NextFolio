@@ -10,12 +10,14 @@
     "preview-email": "email dev -p 3030"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.1",
     "@hookform/resolvers": "^3.6.0",
     "@prisma/client": "^5.15.0",
     "@radix-ui/themes": "^3.0.5",
     "@react-email/components": "^0.0.19",
     "@react-email/render": "^0.0.15",
     "axios": "^1.7.2",
+    "gsap": "^3.12.5",
     "next": "^14.2.4",
     "nodemailer": "^6.9.13",
     "prisma": "^5.15.0",

@@ -2,14 +2,14 @@
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Button, Flex, Text, TextArea } from "@radix-ui/themes";
-import { useForm, FormProvider } from "react-hook-form";
+import axios from "axios";
+import { FormProvider, useForm } from "react-hook-form";
+import toast, { Toaster } from "react-hot-toast";
 import { FaUser } from "react-icons/fa";
 import { LuMail } from "react-icons/lu";
 import { MdOutlineDesignServices } from "react-icons/md";
 import { RiSettings4Line } from "react-icons/ri";
 import { z } from "zod";
-import axios from "axios";
-import toast, { Toaster } from "react-hot-toast";
 
 import {
   FormErrorMessage,
@@ -18,11 +18,16 @@ import {
   LoadingSpinner,
 } from "@/app/components";
 import { contactFormSchema } from "@/schemas";
-import { useState } from "react";
+import useGsapAnimation from "@/utils/useGsapAnimation";
+import { useRef, useState } from "react";
 
 export type contactForm = z.infer<typeof contactFormSchema>;
 
 const ContactForm = () => {
+  const contactFormRef = useRef<HTMLDivElement>(null);
+
+  useGsapAnimation(contactFormRef);
+
   const formMethods = useForm<contactForm>({
     resolver: zodResolver(contactFormSchema),
   });
@@ -72,6 +77,7 @@ const ContactForm = () => {
     <Flex
       direction="column"
       className="top-light-shadow highlight-dark mx-4 w-full rounded-2xl px-4 py-6 md:px-8"
+      ref={contactFormRef}
     >
       <Text className="text-xl font-semibold">React out to me!</Text>
       <FormProvider {...formMethods}>

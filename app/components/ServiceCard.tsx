@@ -1,5 +1,8 @@
+"use client";
+
+import useGsapAnimation from "@/utils/useGsapAnimation";
 import { Box, Flex, Heading, Text } from "@radix-ui/themes";
-import { ReactNode } from "react";
+import { ReactNode, useRef } from "react";
 
 interface Props {
   Icon: ReactNode;
@@ -8,14 +11,19 @@ interface Props {
 }
 
 const ServiceCard = ({ Icon, heading, text }: Props) => {
+  const serviceCardRef = useRef<HTMLDivElement>(null);
+
+  useGsapAnimation(serviceCardRef);
+
   return (
     <Flex
       direction="column"
       align="start"
       justify="start"
-      className="top-light-shadow group min-h-80 max-w-[23rem] rounded-2xl highlight-dark p-8 transition-colors duration-300 ease-out hover:highlight-dark-hover md:min-w-[23rem]"
+      className="top-light-shadow highlight-dark hover:highlight-dark-hover group min-h-80 max-w-[23rem] rounded-2xl p-8 transition-colors duration-300 ease-out md:min-w-[23rem]"
+      ref={serviceCardRef}
     >
-      <Box className="top-light-shadow mb-2 rounded-full highlight-dark-hover p-4 transition-colors duration-300 ease-out group-hover:highlight-dark">
+      <Box className="top-light-shadow highlight-dark-hover group-hover:highlight-dark mb-2 rounded-full p-4 transition-colors duration-300 ease-out">
         {Icon}
       </Box>
       <Heading

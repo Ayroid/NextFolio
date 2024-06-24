@@ -1,4 +1,7 @@
+"use client";
+
 import { BadgeCategory, LinkButton } from "@/app/components/";
+import useGsapAnimation from "@/utils/useGsapAnimation";
 import {
   Box,
   Container,
@@ -9,6 +12,7 @@ import {
   Tooltip,
 } from "@radix-ui/themes";
 import Image, { StaticImageData } from "next/image";
+import { useRef } from "react";
 import { FiExternalLink } from "react-icons/fi";
 import { SiGithub } from "react-icons/si";
 
@@ -37,8 +41,15 @@ const ProjectCard = ({
   timeperiod,
   isVisible = true,
 }: Props) => {
+  const projectCardRef = useRef<HTMLDivElement>(null);
+
+  useGsapAnimation(projectCardRef);
+
   return (
-    <Container className={`${isVisible ? "block" : "hidden"}`}>
+    <Container
+      className={`${isVisible ? "block" : "hidden"}`}
+      ref={projectCardRef}
+    >
       <Flex
         gap="8"
         align="start"

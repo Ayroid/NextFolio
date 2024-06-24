@@ -1,10 +1,18 @@
-import { Container, Flex, Separator, Tooltip } from "@radix-ui/themes";
-import { Badge, LinkButton, SectionHeading } from "../../components";
+"use client";
+
+import useGsapAnimation from "@/utils/useGsapAnimation";
+import { Box, Container, Flex, Separator, Tooltip } from "@radix-ui/themes";
+import Link from "next/link";
+import { useRef } from "react";
 import { TbListSearch } from "react-icons/tb";
 import { TiDocumentText } from "react-icons/ti";
-import Link from "next/link";
+import { Badge, LinkButton, SectionHeading } from "../../components";
 
 const ExperienceSection = () => {
+  const opportunityIconRef = useRef<HTMLDivElement>(null);
+
+  useGsapAnimation(opportunityIconRef);
+
   return (
     <Container className="mx-8 md:mx-4">
       <Flex justify="center" align="start" direction="column">
@@ -16,7 +24,9 @@ const ExperienceSection = () => {
           direction="column"
           className="h-[30rem] w-full"
         >
-          <TbListSearch className="size-32 md:size-40" />
+          <Box ref={opportunityIconRef}>
+            <TbListSearch className="size-32 md:size-40" />
+          </Box>
           <SectionHeading
             text="Looking for"
             highlight="Opportunities"

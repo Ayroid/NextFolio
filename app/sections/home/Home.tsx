@@ -1,7 +1,21 @@
+"use client";
+
 import { Avatar, LinkButton } from "@/app/components/";
+import useGsapAnimation from "@/utils/useGsapAnimation";
 import { Code, Flex, Strong, Text, Box } from "@radix-ui/themes";
+import { useRef } from "react";
 
 const HomeSection = () => {
+  const avatarRef = useRef<HTMLDivElement>(null);
+  const headingRef = useRef<HTMLDivElement>(null);
+  const textRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLDivElement>(null);
+
+  useGsapAnimation(avatarRef, 0.15);
+  useGsapAnimation(headingRef, 0.2);
+  useGsapAnimation(textRef, 0.25);
+  useGsapAnimation(buttonRef, 0.3);
+
   return (
     <Flex
       justify="start"
@@ -10,7 +24,7 @@ const HomeSection = () => {
       gap="5"
       className="h-home-page-initial py-24 md:h-home-page-md"
     >
-      <Flex direction="column" align="center" gap="3">
+      <Flex direction="column" align="center" gap="3" ref={avatarRef}>
         <Avatar />
         <Text weight="bold" size="5">
           Hi! I&apos;m<Strong className="text-radix-accent"> Ayush</Strong>
@@ -22,6 +36,7 @@ const HomeSection = () => {
         justify="center"
         align="center"
         gap="1"
+        ref={headingRef}
       >
         <Text size={{ initial: "8", md: "9" }} align="center" className="w-3/4">
           <Strong>Unleashing Solutions</Strong>{" "}
@@ -36,7 +51,8 @@ const HomeSection = () => {
           initial: "2",
           md: "3",
         }}
-        className="text-gray-accent w-2/3 text-center"
+        className="w-2/3 text-center text-gray-accent"
+        ref={textRef}
       >
         I&apos;m a budding{" "}
         <Code weight="bold" size="3">
@@ -61,7 +77,7 @@ const HomeSection = () => {
         </Code>
       </Text>
 
-      <Box mt="4">
+      <Box mt="4" ref={buttonRef}>
         <LinkButton link="/contact" text="Get in Touch" />
       </Box>
     </Flex>

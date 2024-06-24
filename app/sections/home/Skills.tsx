@@ -1,4 +1,7 @@
+"use client";
+
 import { Badge, SectionHeading } from "@/app/components";
+import useGsapStagger from "@/utils/useGsapStagger";
 import { Container, Flex, Tooltip } from "@radix-ui/themes";
 
 import {
@@ -46,6 +49,8 @@ import {
 } from "react-icons/si";
 
 const SkillsSection = () => {
+  useGsapStagger(".skillIcon", 0.5, 2);
+
   return (
     <Container className="mx-8 md:mx-4">
       <Flex justify="center" align="center" direction="column">
@@ -58,155 +63,155 @@ const SkillsSection = () => {
           className="w-full flex-wrap"
         >
           <Tooltip content="ReactJS">
-            <BiLogoReact className="size-14 cursor-pointer md:size-20" />
+            <BiLogoReact className="skillIcon size-14 cursor-pointer md:size-20" />
           </Tooltip>
 
           <Tooltip content="NextJS">
-            <SiNextdotjs className="size-[2.6rem] cursor-pointer md:size-[3.8rem]" />
+            <SiNextdotjs className="skillIcon size-[2.6rem] cursor-pointer md:size-[3.8rem]" />
           </Tooltip>
 
           <Tooltip content="Redux">
-            <BiLogoRedux className="size-14 cursor-pointer md:size-20" />
+            <BiLogoRedux className="skillIcon size-14 cursor-pointer md:size-20" />
           </Tooltip>
 
           <Tooltip content="NodeJS">
-            <BiLogoNodejs className="size-14 cursor-pointer md:size-20" />
+            <BiLogoNodejs className="skillIcon size-14 cursor-pointer md:size-20" />
           </Tooltip>
 
           <Tooltip content="ExpressJS">
-            <SiExpress className="size-[2.6rem] cursor-pointer md:size-[3.8rem]" />
+            <SiExpress className="skillIcon size-[2.6rem] cursor-pointer md:size-[3.8rem]" />
           </Tooltip>
 
           <Tooltip content="MongoDB">
-            <BiLogoMongodb className="size-14 cursor-pointer md:size-20" />
+            <BiLogoMongodb className="skillIcon size-14 cursor-pointer md:size-20" />
           </Tooltip>
 
           <Tooltip content="Mongoose">
-            <SiMongoose className="size-[2.6rem] cursor-pointer md:size-[3.8rem]" />
+            <SiMongoose className="skillIcon size-[2.6rem] cursor-pointer md:size-[3.8rem]" />
           </Tooltip>
 
           <Tooltip content="Prisma">
-            <SiPrisma className="size-[2.6rem] cursor-pointer md:size-[3.8rem]" />
+            <SiPrisma className="skillIcon size-[2.6rem] cursor-pointer md:size-[3.8rem]" />
           </Tooltip>
 
           <Tooltip content="Redis">
-            <SiRedis className="size-[2.6rem] cursor-pointer md:size-[3.8rem]" />
+            <SiRedis className="skillIcon size-[2.6rem] cursor-pointer md:size-[3.8rem]" />
           </Tooltip>
 
           <Tooltip content="JavaScript">
-            <BiLogoJavascript className="size-14 cursor-pointer md:size-20" />
+            <BiLogoJavascript className="skillIcon size-14 cursor-pointer md:size-20" />
           </Tooltip>
 
           <Tooltip content="TypeScript">
-            <BiLogoTypescript className="size-14 cursor-pointer md:size-20" />
+            <BiLogoTypescript className="skillIcon size-14 cursor-pointer md:size-20" />
           </Tooltip>
 
           <Tooltip content="Java">
-            <BiLogoJava className="size-14 cursor-pointer md:size-20" />
+            <BiLogoJava className="skillIcon size-14 cursor-pointer md:size-20" />
           </Tooltip>
 
           <Tooltip content="Python">
-            <BiLogoPython className="size-14 cursor-pointer md:size-20" />
+            <BiLogoPython className="skillIcon size-14 cursor-pointer md:size-20" />
           </Tooltip>
 
           <Tooltip content="HTML5">
-            <BiLogoHtml5 className="size-14 cursor-pointer md:size-20" />
+            <BiLogoHtml5 className="skillIcon size-14 cursor-pointer md:size-20" />
           </Tooltip>
 
           <Tooltip content="CSS3">
-            <BiLogoCss3 className="size-14 cursor-pointer md:size-20" />
+            <BiLogoCss3 className="skillIcon size-14 cursor-pointer md:size-20" />
           </Tooltip>
 
           <Tooltip content="TailwindCSS">
-            <BiLogoTailwindCss className="size-14 cursor-pointer md:size-20" />
+            <BiLogoTailwindCss className="skillIcon size-14 cursor-pointer md:size-20" />
           </Tooltip>
 
           <Tooltip content="Bootstrap">
-            <SiBootstrap className="size-[3.1rem] cursor-pointer md:size-[3.8rem]" />
+            <SiBootstrap className="skillIcon size-[3.1rem] cursor-pointer md:size-[3.8rem]" />
           </Tooltip>
 
           <Tooltip content="RadixUI">
-            <SiRadixui className="size-[2.6rem] cursor-pointer md:size-[3.8rem]" />
+            <SiRadixui className="skillIcon size-[2.6rem] cursor-pointer md:size-[3.8rem]" />
           </Tooltip>
 
           <Tooltip content="ShadcnUI">
-            <SiShadcnui className="size-[2.6rem] cursor-pointer md:size-[3.8rem]" />
+            <SiShadcnui className="skillIcon size-[2.6rem] cursor-pointer md:size-[3.8rem]" />
           </Tooltip>
 
           <Tooltip content="Linux">
-            <FaLinux className="size-[3.1rem] cursor-pointer md:size-[4.2rem]" />
+            <FaLinux className="skillIcon size-[3.1rem] cursor-pointer md:size-[4.2rem]" />
           </Tooltip>
 
           <Tooltip content="Bash">
-            <SiGnubash className="size-[3.1rem] cursor-pointer md:size-[4.2rem]" />
+            <SiGnubash className="skillIcon size-[3.1rem] cursor-pointer md:size-[4.2rem]" />
           </Tooltip>
 
           <Tooltip content="Git">
-            <BiLogoGit className="size-14 cursor-pointer md:size-20" />
+            <BiLogoGit className="skillIcon size-14 cursor-pointer md:size-20" />
           </Tooltip>
 
           <Tooltip content="GitHub">
-            <BiLogoGithub className="size-14 cursor-pointer md:size-20" />
+            <BiLogoGithub className="skillIcon size-14 cursor-pointer md:size-20" />
           </Tooltip>
 
           <Tooltip content="Docker">
-            <BiLogoDocker className="size-14 cursor-pointer md:size-20" />
+            <BiLogoDocker className="skillIcon size-14 cursor-pointer md:size-20" />
           </Tooltip>
 
           <Tooltip content="Maven">
-            <SiApachemaven className="size-[3.1rem] cursor-pointer md:size-[3.8rem]" />
+            <SiApachemaven className="skillIcon size-[3.1rem] cursor-pointer md:size-[3.8rem]" />
           </Tooltip>
 
           <Tooltip content="Selenium">
-            <SiSelenium className="size-[3.1rem] cursor-pointer md:size-[3.8rem]" />
+            <SiSelenium className="skillIcon size-[3.1rem] cursor-pointer md:size-[3.8rem]" />
           </Tooltip>
 
           <Tooltip content="Postman">
-            <SiPostman className="size-[3.1rem] cursor-pointer md:size-[3.8rem]" />
+            <SiPostman className="skillIcon size-[3.1rem] cursor-pointer md:size-[3.8rem]" />
           </Tooltip>
 
           <Tooltip content="Jenkins">
-            <FaJenkins className="size-[3.1rem] cursor-pointer md:size-[4.2rem]" />
+            <FaJenkins className="skillIcon size-[3.1rem] cursor-pointer md:size-[4.2rem]" />
           </Tooltip>
 
-          <Tooltip content="GitHub Actions">
-            <SiGithubactions className="size-[3.1rem] cursor-pointer md:size-[3.8rem]" />
+          <Tooltip content="GitHub Action s">
+            <SiGithubactions className="skillIcon size-[3.1rem] cursor-pointer md:size-[3.8rem]" />
           </Tooltip>
 
           <Tooltip content="Terraform">
-            <SiTerraform className="size-[3.1rem] cursor-pointer md:size-[3.8rem]" />
+            <SiTerraform className="skillIcon size-[3.1rem] cursor-pointer md:size-[3.8rem]" />
           </Tooltip>
 
           <Tooltip content="Ansible">
-            <SiAnsible className="size-[3.1rem] cursor-pointer md:size-[3.8rem]" />
+            <SiAnsible className="skillIcon size-[3.1rem] cursor-pointer md:size-[3.8rem]" />
           </Tooltip>
 
           <Tooltip content="Prometheus">
-            <SiPrometheus className="size-[3.1rem] cursor-pointer md:size-[3.8rem]" />
+            <SiPrometheus className="skillIcon size-[3.1rem] cursor-pointer md:size-[3.8rem]" />
           </Tooltip>
 
           <Tooltip content="Grafana">
-            <SiGrafana className="size-[3.1rem] cursor-pointer md:size-[3.8rem]" />
+            <SiGrafana className="skillIcon size-[3.1rem] cursor-pointer md:size-[3.8rem]" />
           </Tooltip>
 
           <Tooltip content="Nginx">
-            <SiNginx className="size-[3.1rem] cursor-pointer md:size-[3.8rem]" />
+            <SiNginx className="skillIcon size-[3.1rem] cursor-pointer md:size-[3.8rem]" />
           </Tooltip>
 
           <Tooltip content="AWS">
-            <BiLogoAws className="size-14 cursor-pointer md:size-20" />
+            <BiLogoAws className="skillIcon size-14 cursor-pointer md:size-20" />
           </Tooltip>
 
           <Tooltip content="Netlify">
-            <SiNetlify className="size-[3.1rem] cursor-pointer md:size-[3.8rem]" />
+            <SiNetlify className="skillIcon size-[3.1rem] cursor-pointer md:size-[3.8rem]" />
           </Tooltip>
 
           <Tooltip content="Vercel">
-            <SiVercel className="size-[3.1rem] cursor-pointer md:size-[3.8rem]" />
+            <SiVercel className="skillIcon size-[3.1rem] cursor-pointer md:size-[3.8rem]" />
           </Tooltip>
 
           <Tooltip content="Figma">
-            <BiLogoFigma className="size-14 cursor-pointer md:size-[4.2rem]" />
+            <BiLogoFigma className="skillIcon size-14 cursor-pointer md:size-[4.2rem]" />
           </Tooltip>
         </Flex>
       </Flex>

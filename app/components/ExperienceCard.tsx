@@ -1,6 +1,10 @@
+"use client";
+
 import { Box, Flex, Heading, Separator, Text } from "@radix-ui/themes";
 import { LuSchool } from "react-icons/lu";
 import { FaUniversity } from "react-icons/fa";
+import { useRef } from "react";
+import useGsapAnimation from "@/utils/useGsapAnimation";
 
 interface Props {
   instituteName: string;
@@ -27,6 +31,9 @@ const ExperienceCard = ({
   reverse = false,
   last = false,
 }: Props) => {
+  const experienceCardRef = useRef<HTMLDivElement>(null);
+  useGsapAnimation(experienceCardRef);
+
   return (
     <Flex
       className={`h-[18rem] flex-col lg:flex-row ${reverse && "lg:flex-row-reverse"} mb-10 justify-start gap-5 align-top lg:mb-0 lg:justify-between lg:gap-0`}
@@ -34,6 +41,7 @@ const ExperienceCard = ({
       <Flex
         direction="column"
         className={`z-10 order-2 h-fit lg:order-1 lg:w-[25rem]`}
+        ref={experienceCardRef}
       >
         <Heading
           size="6"
@@ -63,6 +71,7 @@ const ExperienceCard = ({
         align="start"
         direction="column"
         className="top-light-shadow highlight-dark hover:highlight-dark-hover z-10 order-3 h-56 w-[23rem] rounded-2xl p-6 transition-colors duration-300 ease-out lg:order-3 lg:min-w-[25rem]"
+        ref={experienceCardRef}
       >
         <Flex direction="column">
           <Flex align="start" gap="4">

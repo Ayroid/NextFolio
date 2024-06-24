@@ -1,7 +1,8 @@
 "use client";
 
+import useGsapAnimation from "@/utils/useGsapAnimation";
 import { Flex, RadioCards, Text } from "@radix-ui/themes";
-import React from "react";
+import { useRef } from "react";
 
 interface Props {
   activeCategory: string;
@@ -16,8 +17,12 @@ const RadioCardSwitch = ({
   columnCount: { initial, sm },
   changeCategory,
 }: Props) => {
+  const radioCardRef = useRef<HTMLDivElement>(null);
+
+  useGsapAnimation(radioCardRef);
+
   return (
-    <Flex className="-mt-5 mb-10 max-w-full">
+    <Flex className="-mt-5 mb-10 max-w-full" ref={radioCardRef}>
       <RadioCards.Root
         value={activeCategory}
         onValueChange={(value) => changeCategory(value)}

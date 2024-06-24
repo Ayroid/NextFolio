@@ -17,4 +17,5 @@ export { default as ProjectCard } from "./ProjectCard";
 export { default as RadioCardSwitch } from "./RadioCardSwitch";
 export { default as SectionHeading } from "./SectionHeading";
 export { default as ServiceCard } from "./ServiceCard";
+export { default as SocialMediaLinks } from "./SocialMediaLinks";
 export { default as UnderDevelopmemt } from "./UnderDev";

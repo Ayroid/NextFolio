@@ -1,6 +1,10 @@
+"use client";
+
 import { BadgeCategory } from "@/app/components";
+import useGsapAnimation from "@/utils/useGsapAnimation";
 import { Flex, Heading, Text } from "@radix-ui/themes";
 import Image, { StaticImageData } from "next/image";
+import { useRef } from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
 interface Props {
@@ -22,11 +26,16 @@ const BlogCard = ({
   date,
   isVisible = true,
 }: Props) => {
+  const blogCardRef = useRef<HTMLAnchorElement>(null);
+
+  useGsapAnimation(blogCardRef);
+
   return (
     <a
       href={link}
       target="_blank"
       className={`${isVisible ? "block" : "hidden"}`}
+      ref={blogCardRef}
     >
       <Flex
         align="center"

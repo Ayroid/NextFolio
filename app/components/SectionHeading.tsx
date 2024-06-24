@@ -1,5 +1,8 @@
-import React from "react";
-import { Heading, Box } from "@radix-ui/themes";
+"use client";
+
+import useGsapAnimation from "@/utils/useGsapAnimation";
+import { Box, Heading } from "@radix-ui/themes";
+import { useRef } from "react";
 
 interface Props {
   text?: string;
@@ -14,8 +17,15 @@ const SectionHeading = ({
   inline = false,
   textCenter = false,
 }: Props) => {
+  const sectionHeadingRef = useRef<HTMLDivElement>(null);
+
+  useGsapAnimation(sectionHeadingRef);
+
   return (
-    <Box className={`mb-12 mt-4 ${textCenter && "text-center"}`}>
+    <Box
+      className={`mb-12 mt-4 ${textCenter && "text-center"}`}
+      ref={sectionHeadingRef}
+    >
       <Heading
         size={{
           initial: "8",
