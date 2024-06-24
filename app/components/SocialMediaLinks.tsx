@@ -7,7 +7,7 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 const SocialMediaLinks = () => {
-  useGsapStagger(".socialIcons", 0.5, 0.5);
+  useGsapStagger(".socialIcons", 0.5, 0.2);
 
   return (
     <Flex align="center" justify="center" gap="4" mt="6">
