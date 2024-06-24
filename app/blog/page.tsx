@@ -58,9 +58,4 @@ const BlogPage = () => {
   );
 };
 
-export const metadata: Metadata = {
-  title: "Ayroid | Blogs",
-  description: "Read Ayroid's articles and blogs.",
-};
-
 export default BlogPage;

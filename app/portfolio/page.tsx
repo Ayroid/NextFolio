@@ -84,9 +84,4 @@ const PortfolioPage = () => {
   );
 };
 
-export const metadata: Metadata = {
-  title: "Ayroid | Portfolio",
-  description: "Explore Ayush's portfolio.",
-};
-
 export default PortfolioPage;
