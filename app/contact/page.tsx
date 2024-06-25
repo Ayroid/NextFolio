@@ -1,10 +1,11 @@
 import {
+  BackToTop,
   Badge,
   ContactCard,
   ContactForm,
   SectionHeading,
 } from "@/app/components";
-import { Container, Flex } from "@radix-ui/themes";
+import { Box, Container, Flex } from "@radix-ui/themes";
 import { Metadata } from "next";
 import { LuMail } from "react-icons/lu";
 import { MdPhone } from "react-icons/md";
@@ -31,13 +32,16 @@ const ContactPage = () => {
           <ContactForm />
         </Flex>
       </Flex>
+      <Box className="fixed bottom-20 right-20">
+        <BackToTop />
+      </Box>
     </Container>
   );
 };
 
 export const metadata: Metadata = {
-  title: 'Ayroid | Contact',
-  description: 'Contact Ayroid via mail or phone.'
+  title: "Ayroid | Contact",
+  description: "Contact Ayroid via mail or phone.",
 };
 
 export default ContactPage;

@@ -1,16 +1,16 @@
 "use client";
 
 import {
+  BackToTop,
   Badge,
   ProjectCard,
   RadioCardSwitch,
   SectionHeading,
 } from "@/app/components";
-import { Container, Flex } from "@radix-ui/themes";
+import projectData from "@/data/projects";
+import { Box, Container, Flex } from "@radix-ui/themes";
 import { useState } from "react";
 import { TbTools } from "react-icons/tb";
-import projectData from "@/data/projects";
-import { Metadata } from "next";
 
 const PortfolioPage = () => {
   const [categorySelected, setCategorySelected] = useState("Highlighted");
@@ -80,6 +80,9 @@ const PortfolioPage = () => {
           />
         </Flex>
       </Flex>
+      <Box className="fixed bottom-20 right-20">
+        <BackToTop />
+      </Box>
     </Container>
   );
 };

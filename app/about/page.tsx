@@ -6,6 +6,7 @@ import {
   EducationSection,
 } from "@/app/sections/about";
 import { Metadata } from "next";
+import { BackToTop } from "@/app/components";
 
 const AboutPage = () => {
   return (
@@ -21,6 +22,9 @@ const AboutPage = () => {
       </Box>
       <Box className="mb-36">
         <ExperienceSection />
+      </Box>
+      <Box className="fixed bottom-20 right-20">
+        <BackToTop />
       </Box>
     </Container>
   );

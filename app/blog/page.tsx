@@ -1,15 +1,15 @@
 "use client";
 
 import {
+  BackToTop,
   Badge,
   BlogCard,
   RadioCardSwitch,
   SectionHeading,
 } from "@/app/components";
-import { Container, Flex } from "@radix-ui/themes";
-import { useState } from "react";
 import blogData from "@/data/blogs";
-import { Metadata } from "next";
+import { Box, Container, Flex } from "@radix-ui/themes";
+import { useState } from "react";
 
 const BlogPage = () => {
   const [categorySelected, setCategorySelected] = useState("Highlighted");
@@ -53,6 +53,9 @@ const BlogPage = () => {
             />
           ))}
         </Flex>
+        <Box className="fixed bottom-20 right-20">
+          <BackToTop />
+        </Box>
       </Flex>
     </Container>
   );
