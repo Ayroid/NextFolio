@@ -4,8 +4,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 
 import { Theme } from "@radix-ui/themes";
-import Navbar from "./components/Navbar";
-import { Footer } from "./components";
+import { Footer, Navbar } from "./components";
 
 const inter = Inter({
   weight: ["400", "700"],
@@ -29,7 +28,7 @@ export default function RootLayout({
         <link rel="manifest" href="/manifest.json" />
       </head>
       <body className={inter.variable}>
-        <Theme accentColor="mint" radius="small" appearance="dark">
+        <Theme accentColor="violet" radius="small" appearance="dark">
           <main>
             <Navbar />
             {children}

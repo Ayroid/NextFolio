@@ -2,7 +2,13 @@
 
 import useGsapAnimation from "@/utils/useGsapAnimation";
 import { Box, Heading } from "@radix-ui/themes";
+import localFont from "next/font/local";
 import { useRef } from "react";
+
+const hendrix = localFont({
+  src: "../../public/fonts/br-hendrix/BRHendrix-Medium.otf",
+  variable: "--font-hendrix",
+});
 
 interface Props {
   text?: string;
@@ -23,7 +29,7 @@ const SectionHeading = ({
 
   return (
     <Box
-      className={`mb-12 mt-4 ${textCenter && "text-center"}`}
+      className={`mb-12 mt-4 ${textCenter && "text-center"} `}
       ref={sectionHeadingRef}
     >
       <Heading
@@ -43,6 +49,7 @@ const SectionHeading = ({
         }}
         weight="medium"
         className={`text-radix-accent ${inline && "inline"}`}
+        style={{ fontFamily: "var(--font-hendrix)" }}
       >
         {highlight}
       </Heading>
