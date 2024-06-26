@@ -12,14 +12,14 @@ const useGsapAnimation = (ref: RefObject<HTMLElement>, delay: number = 0) => {
 
       if (element) {
         gsap.from(element, {
-          y: 50,
           opacity: 0,
-          duration: 0.5,
+          duration: 0.7,
           delay: delay,
           scrollTrigger: {
             trigger: element,
           },
           ease: "power1.in",
+          filter: "box-shadow(0 0 10px rgba(0, 0, 0, 0.2))",
         });
       }
 

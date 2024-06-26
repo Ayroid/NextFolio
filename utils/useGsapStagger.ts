@@ -11,7 +11,6 @@ const useGsapStagger = (
 ) => {
   useGSAP(() => {
     gsap.from(className, {
-      y: 25,
       opacity: 0,
       delay: delay,
       scrollTrigger: {
@@ -23,6 +22,7 @@ const useGsapStagger = (
         from: "start",
       },
       ease: "power1.in",
+      filter: "box-shadow(0 0 10px rgba(0, 0, 0, 0.2))",
     });
 
     return () => {
