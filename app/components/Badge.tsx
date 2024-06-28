@@ -13,7 +13,7 @@ interface Props {
 const Badge = ({ text, color }: Props) => {
   const badgeRef = useRef<HTMLDivElement>(null);
 
-  useGsapAnimation(badgeRef);
+  useGsapAnimation({ ref: badgeRef });
 
   return (
     <Flex

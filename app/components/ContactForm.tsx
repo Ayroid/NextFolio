@@ -26,7 +26,7 @@ export type contactForm = z.infer<typeof contactFormSchema>;
 const ContactForm = () => {
   const contactFormRef = useRef<HTMLDivElement>(null);
 
-  useGsapAnimation(contactFormRef);
+  useGsapAnimation({ ref: contactFormRef });
 
   const formMethods = useForm<contactForm>({
     resolver: zodResolver(contactFormSchema),

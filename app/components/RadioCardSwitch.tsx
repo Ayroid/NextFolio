@@ -19,7 +19,7 @@ const RadioCardSwitch = ({
 }: Props) => {
   const radioCardRef = useRef<HTMLDivElement>(null);
 
-  useGsapAnimation(radioCardRef);
+  useGsapAnimation({ref: radioCardRef});
 
   return (
     <Flex className="-mt-5 mb-10 max-w-full" ref={radioCardRef}>

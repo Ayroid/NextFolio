@@ -43,7 +43,7 @@ const ProjectCard = ({
 }: Props) => {
   const projectCardRef = useRef<HTMLDivElement>(null);
 
-  useGsapAnimation(projectCardRef);
+  useGsapAnimation({ ref: projectCardRef });
 
   return (
     <Container

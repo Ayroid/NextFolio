@@ -12,7 +12,7 @@ import { useRef } from "react";
 const Footer = () => {
   const buttonRef = useRef<HTMLDivElement>(null);
 
-  useGsapAnimation(buttonRef);
+  useGsapAnimation({ref: buttonRef});
 
   return (
     <Container className="bg-dark">

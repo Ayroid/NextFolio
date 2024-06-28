@@ -10,7 +10,7 @@ import { SectionHeading } from "../../components";
 const AboutSection = () => {
   const imageRef = useRef<HTMLImageElement>(null);
 
-  useGsapAnimation(imageRef);
+  useGsapAnimation({ref: imageRef});
 
   return (
     <Container className="mx-8 md:mx-4">

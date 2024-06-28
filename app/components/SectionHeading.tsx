@@ -19,7 +19,7 @@ const SectionHeading = ({
 }: Props) => {
   const sectionHeadingRef = useRef<HTMLDivElement>(null);
 
-  useGsapAnimation(sectionHeadingRef);
+  useGsapAnimation({ref: sectionHeadingRef});
 
   return (
     <Box

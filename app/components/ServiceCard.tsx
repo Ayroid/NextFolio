@@ -13,7 +13,7 @@ interface Props {
 const ServiceCard = ({ Icon, heading, text }: Props) => {
   const serviceCardRef = useRef<HTMLDivElement>(null);
 
-  useGsapAnimation(serviceCardRef);
+  useGsapAnimation({ref: serviceCardRef});
 
   return (
     <Flex

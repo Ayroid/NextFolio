@@ -32,7 +32,7 @@ const ExperienceCard = ({
   last = false,
 }: Props) => {
   const experienceCardRef = useRef<HTMLDivElement>(null);
-  useGsapAnimation(experienceCardRef);
+  useGsapAnimation({ref: experienceCardRef});
 
   return (
     <Flex

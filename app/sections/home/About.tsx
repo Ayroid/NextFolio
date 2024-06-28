@@ -12,9 +12,9 @@ const AboutSection = () => {
   const textRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLDivElement>(null);
 
-  useGsapAnimation(imageRef);
-  useGsapAnimation(textRef);
-  useGsapAnimation(buttonRef);
+  useGsapAnimation({ref: imageRef});
+  useGsapAnimation({ref: textRef});
+  useGsapAnimation({ref: buttonRef});
 
   return (
     <Container className="mx-8 md:mx-4">

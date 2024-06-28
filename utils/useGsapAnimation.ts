@@ -5,7 +5,17 @@ import { RefObject } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const useGsapAnimation = (ref: RefObject<HTMLElement>, delay: number = 0) => {
+interface UseGsapAnimationProps {
+  ref: RefObject<HTMLElement>;
+  delay?: number;
+  pin?: boolean;
+}
+
+const useGsapAnimation = ({
+  ref,
+  delay = 0,
+  pin = false,
+}: UseGsapAnimationProps) => {
   useGSAP(
     () => {
       const element = ref.current;
@@ -17,6 +27,7 @@ const useGsapAnimation = (ref: RefObject<HTMLElement>, delay: number = 0) => {
           delay: delay,
           scrollTrigger: {
             trigger: element,
+            pin,
           },
           ease: "power1.in",
           filter: "box-shadow(0 0 10px rgba(0, 0, 0, 0.2))",

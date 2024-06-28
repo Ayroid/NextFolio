@@ -28,7 +28,7 @@ const BlogCard = ({
 }: Props) => {
   const blogCardRef = useRef<HTMLAnchorElement>(null);
 
-  useGsapAnimation(blogCardRef);
+  useGsapAnimation({ ref: blogCardRef });
 
   return (
     <a

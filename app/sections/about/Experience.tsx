@@ -11,7 +11,7 @@ import { Badge, LinkButton, SectionHeading } from "../../components";
 const ExperienceSection = () => {
   const opportunityIconRef = useRef<HTMLDivElement>(null);
 
-  useGsapAnimation(opportunityIconRef);
+  useGsapAnimation({ref: opportunityIconRef});
 
   return (
     <Container className="mx-8 md:mx-4">
