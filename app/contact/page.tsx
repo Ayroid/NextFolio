@@ -9,7 +9,6 @@ import {
 } from "@/app/components";
 import { Box, Container, Flex } from "@radix-ui/themes";
 import Lenis from "@studio-freight/lenis/types";
-import { Metadata } from "next";
 import { useEffect } from "react";
 import { LuMail } from "react-icons/lu";
 import { MdPhone } from "react-icons/md";
@@ -74,11 +73,6 @@ const ContactPage = () => {
       </Box>
     </Container>
   );
-};
-
-export const metadata: Metadata = {
-  title: "Ayroid | Contact",
-  description: "Contact Ayroid via mail or phone.",
 };
 
 export default ContactPage;
