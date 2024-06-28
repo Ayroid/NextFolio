@@ -22,13 +22,13 @@ const Navbar = () => {
   };
 
   return (
-    <Container className="highlight-dark md:bg-dark fixed z-50 flex h-20 w-full justify-center p-5 md:static md:h-28">
-      <Flex justify="between" align="center">
+    <Container className="md:bg-dark fixed z-50 flex h-20 w-full justify-center bg-black/50 p-5 backdrop-blur-md md:static md:h-28">
+      <Flex justify="between" align="center" className="w-full">
         <Link href="/">
           <Text className="w-20 text-xl font-bold">AYROID</Text>
         </Link>
         <Flex
-          className={`highlight-dark md:bg-dark fixed right-0 top-[4.3rem] h-full w-48 items-start px-5 transition-transform duration-500 md:static md:h-auto md:w-auto md:translate-x-0 md:transition-none ${
+          className={`md:bg-dark fixed right-0 top-[5rem] h-full w-48 items-start bg-black/50 px-5 backdrop-blur-md transition-transform duration-500 md:static md:h-auto md:w-auto md:translate-x-0 md:bg-transparent md:transition-none ${
             menuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
