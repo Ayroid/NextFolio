@@ -1,14 +1,36 @@
-import { Container, Box } from "@radix-ui/themes";
+"use client";
+
+import { BackToTop } from "@/app/components";
 import {
   AboutSection,
-  SkillsSection,
-  ExperienceSection,
   EducationSection,
+  ExperienceSection,
+  SkillsSection,
 } from "@/app/sections/about";
+import { Box, Container } from "@radix-ui/themes";
+import Lenis from "@studio-freight/lenis";
 import { Metadata } from "next";
-import { BackToTop } from "@/app/components";
+import { useEffect } from "react";
 
 const AboutPage = () => {
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    });
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenis.destroy();
+    };
+  }, []);
+
   return (
     <Container className="bg-dark space-y-96">
       <Box className="mb-36 mt-24">
@@ -28,12 +50,6 @@ const AboutPage = () => {
       </Box>
     </Container>
   );
-};
-
-export const metadata: Metadata = {
-  title: "Ayroid | About",
-  description:
-    "Learn more about Ayroid, his skills, experience, and education.",
 };
 
 export default AboutPage;

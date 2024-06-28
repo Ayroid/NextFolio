@@ -1,3 +1,5 @@
+"use client";
+
 import {
   BackToTop,
   Badge,
@@ -6,11 +8,31 @@ import {
   SectionHeading,
 } from "@/app/components";
 import { Box, Container, Flex } from "@radix-ui/themes";
+import Lenis from "@studio-freight/lenis/types";
 import { Metadata } from "next";
+import { useEffect } from "react";
 import { LuMail } from "react-icons/lu";
 import { MdPhone } from "react-icons/md";
 
 const ContactPage = () => {
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    });
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenis.destroy();
+    };
+  }, []);
+
   return (
     <Container className="bg-dark py-32 md:py-24">
       <Flex

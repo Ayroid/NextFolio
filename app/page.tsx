@@ -1,4 +1,8 @@
-import { Container, Box } from "@radix-ui/themes";
+"use client";
+
+import { Box, Container } from "@radix-ui/themes";
+import Lenis from "@studio-freight/lenis";
+import { useEffect } from "react";
 import {
   AboutSection,
   BlogSection,
@@ -11,6 +15,25 @@ import {
 import { BackToTop } from "@/app/components";
 
 export default function Home() {
+  
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    });
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenis.destroy();
+    };
+  }, []);
+
   return (
     <Container className="bg-dark space-y-96">
       <Box className="mb-36 mt-12 md:mb-60 md:mt-0">
