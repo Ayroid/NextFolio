@@ -49,7 +49,7 @@ import {
 } from "react-icons/si";
 
 const SkillsSection = () => {
-  useGsapStagger(".skillIcon", 0.5, 2);
+  useGsapStagger({ className: ".skillIcon", delay: 0.25, amount: 3 });
 
   return (
     <Container className="mx-8 md:mx-4">

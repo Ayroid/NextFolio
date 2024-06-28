@@ -4,11 +4,13 @@ import { ScrollTrigger } from "gsap/all";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const useGsapStagger = (
-  className: string,
-  delay: number = 0,
-  amount: number = 3,
-) => {
+interface Props {
+  className: string;
+  delay?: number;
+  amount?: number;
+}
+
+const useGsapStagger = ({ className, delay = 0, amount = 3 }: Props) => {
   useGSAP(() => {
     gsap.from(className, {
       opacity: 0,

@@ -2,13 +2,7 @@
 
 import useGsapAnimation from "@/utils/useGsapAnimation";
 import { Box, Heading } from "@radix-ui/themes";
-import localFont from "next/font/local";
 import { useRef } from "react";
-
-const hendrix = localFont({
-  src: "../../public/fonts/br-hendrix/BRHendrix-Medium.otf",
-  variable: "--font-hendrix",
-});
 
 interface Props {
   text?: string;
@@ -49,7 +43,6 @@ const SectionHeading = ({
         }}
         weight="medium"
         className={`text-radix-accent ${inline && "inline"}`}
-        style={{ fontFamily: "var(--font-hendrix)" }}
       >
         {highlight}
       </Heading>
