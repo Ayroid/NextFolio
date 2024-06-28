@@ -9,29 +9,11 @@ import {
 } from "@/app/components";
 import projectData from "@/data/projects";
 import { Box, Container, Flex } from "@radix-ui/themes";
-import Lenis from "@studio-freight/lenis/types";
-import { useEffect, useState } from "react";
+
+import { useState } from "react";
 import { TbTools } from "react-icons/tb";
 
 const PortfolioPage = () => {
-  useEffect(() => {
-    const lenis = new Lenis({
-      duration: 1.2,
-      easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-    });
-
-    function raf(time: number) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
-
-    return () => {
-      lenis.destroy();
-    };
-  }, []);
-
   const [categorySelected, setCategorySelected] = useState("Highlighted");
 
   const handleCategoryChange = (category: string) => {
