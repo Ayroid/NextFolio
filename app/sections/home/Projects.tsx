@@ -9,7 +9,7 @@ import projectData from "@/data/projects";
 
 const Projects = () => {
   return (
-    <Container className="relative mx-8 md:mx-4">
+    <Container className="relative z-20 mx-8 md:mx-4">
       <Badge color="#ffd700" text="Projects" />
       <SectionHeading text="Featured" highlight="Tech Creations" />
       <Flex direction="column" justify="center" align="center" gap="8">
@@ -22,8 +22,8 @@ const Projects = () => {
         ))}
         <LinkButton link="/portfolio" text="Discover More Projects" />
       </Flex>
-      <Box className="absolute -right-40 -top-12 h-[25rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
-      <Box className="absolute -bottom-72 -left-40 h-[25rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
+      <Box className="absolute -right-40 -top-12 z-10 h-[25rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
+      <Box className="absolute -bottom-96 -left-40 z-10 h-[25rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
     </Container>
   );
 };

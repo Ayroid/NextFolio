@@ -38,7 +38,7 @@ const PortfolioPage = () => {
         justify="center"
         align="center"
         direction="column"
-        className="relative mx-8 md:mx-4"
+        className="relative z-20 mx-8 md:mx-4"
       >
         <Badge color="#9b00ff" text="Projects" />
         <SectionHeading
@@ -70,7 +70,7 @@ const PortfolioPage = () => {
           justify="center"
           align="center"
           direction="column"
-          className="relative mt-20"
+          className="relative z-20 mt-20"
         >
           <TbTools className="size-24 md:size-32" />
           <SectionHeading
@@ -78,11 +78,11 @@ const PortfolioPage = () => {
             highlight="awesome projects!"
             textCenter
           />
-          <Box className="absolute -left-96 -top-64 h-[20rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
-          <Box className="absolute -bottom-64 -right-96 h-[20rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
+          <Box className="absolute -left-96 -top-64 z-10 h-[20rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
+          <Box className="absolute -bottom-64 -right-96 z-10 h-[20rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
         </Flex>
-        <Box className="absolute -right-52 -top-80 h-[20rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
-        <Box className="absolute -left-52 top-20 h-[25rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
+        <Box className="absolute -right-52 -top-80 z-10 h-[20rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
+        <Box className="absolute -left-52 top-20 z-10 h-[25rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
       </Flex>
       <Box className="fixed bottom-20 right-20">
         <BackToTop />

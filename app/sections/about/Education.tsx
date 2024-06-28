@@ -11,7 +11,7 @@ const EducationSection = () => {
           justify="center"
           align="center"
           direction="column"
-          className="relative mt-20 w-full"
+          className="relative z-20 mt-20 w-full"
         >
           <ExperienceCard
             instituteName="University of Petroleum and Energy Studies"
@@ -47,7 +47,7 @@ const EducationSection = () => {
           />
         </Flex>
       </Flex>
-      <Box className="absolute -left-52 -top-52 h-[20rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
+      <Box className="absolute -left-52 -top-52 z-10 h-[20rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
     </Container>
   );
 };

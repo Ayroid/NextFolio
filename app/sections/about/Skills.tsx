@@ -72,7 +72,7 @@ const SkillsSection = () => {
   useGsapStagger({ className: ".skillIcon", delay: 0.25, amount: 3 });
 
   return (
-    <Container className="relative mx-8 md:mx-4">
+    <Container className="relative z-20 mx-8 md:mx-4">
       <Flex justify="center" align="center" direction="column">
         <Badge color="#9b00ff" text="Tech Stack" />
         <SectionHeading text="Skills &" highlight="Tools" inline />
@@ -317,7 +317,7 @@ const SkillsSection = () => {
           </Tooltip>
         </Flex>
       </Flex>
-      <Box className="absolute -right-40 -top-12 h-[20rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
+      <Box className="absolute -right-40 -top-12 z-10 h-[20rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
     </Container>
   );
 };

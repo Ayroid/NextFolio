@@ -22,7 +22,7 @@ const AboutSection = () => {
         justify="center"
         align="start"
         gap="9"
-        className="relative flex-wrap-reverse lg:flex-nowrap"
+        className="relative z-10 flex-wrap-reverse lg:flex-nowrap"
       >
         <Image
           src={ProfilePic}
@@ -63,7 +63,7 @@ const AboutSection = () => {
             <LinkButton link="/about" text="Discover More" />
           </Flex>
         </Box>
-        <Box className="absolute -right-40 bottom-[26rem] h-[25rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
+        <Box className="absolute -right-40 bottom-[26rem] z-10 h-[25rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
       </Flex>
     </Container>
   );

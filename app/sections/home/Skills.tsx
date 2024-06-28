@@ -57,7 +57,7 @@ const SkillsSection = () => {
         justify="center"
         align="center"
         direction="column"
-        className="relative"
+        className="relative z-20"
       >
         <Badge color="#9b00ff" text="Tech Stack" />
         <SectionHeading text="Skills &" highlight="Tools" inline />
@@ -219,7 +219,7 @@ const SkillsSection = () => {
             <BiLogoFigma className="skillIcon size-14 cursor-pointer md:size-[4.2rem]" />
           </Tooltip>
         </Flex>
-        <Box className="absolute -left-40 top-0 h-[25rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
+        <Box className="absolute -left-40 top-0 z-10 h-[25rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
       </Flex>
     </Container>
   );
