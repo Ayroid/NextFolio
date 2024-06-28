@@ -9,7 +9,6 @@ import {
 } from "@/app/sections/about";
 import { Box, Container } from "@radix-ui/themes";
 import Lenis from "@studio-freight/lenis";
-import { Metadata } from "next";
 import { useEffect } from "react";
 
 const AboutPage = () => {
@@ -51,5 +50,6 @@ const AboutPage = () => {
     </Container>
   );
 };
+
 
 export default AboutPage;
