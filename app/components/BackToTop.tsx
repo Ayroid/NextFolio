@@ -29,7 +29,7 @@ const BackToTop = () => {
   return (
     <TbSquareRoundedArrowUp
       onClick={scrollToTop}
-      color="#02e4bf"
+      color="var(--accent-9)"
       className={`hidden size-7 cursor-pointer transition-opacity duration-300 md:block md:size-8 ${isVisible ? "opacity-100" : "opacity-0"}`}
     />
   );
