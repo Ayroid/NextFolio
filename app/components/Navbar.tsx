@@ -28,11 +28,11 @@ const Navbar = () => {
           <Text className="w-20 text-xl font-bold">AYROID</Text>
         </Link>
         <Flex
-          className={`md:bg-dark fixed right-0 top-[5rem] h-full w-48 items-start bg-black/50 px-5 backdrop-blur-md transition-transform duration-500 md:static md:h-auto md:w-auto md:translate-x-0 md:bg-transparent md:transition-none ${
+          className={`md:bg-dark fixed right-0 top-[5rem] h-screen w-48 items-start bg-black/50 px-5 backdrop-blur-md transition-transform duration-500 md:static md:h-auto md:w-auto md:translate-x-0 md:bg-transparent md:transition-none ${
             menuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
-          <ul className="my-7 flex w-full flex-col gap-7 md:flex-row md:items-center md:gap-12">
+          <ul className="my-7 flex h-full w-full flex-col gap-7 md:flex-row md:items-center md:gap-12">
             {navItems.map(({ name, href }) => (
               <li
                 key={name}
