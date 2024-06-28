@@ -2,7 +2,7 @@
 
 import { Badge, RadioCardSwitch, SectionHeading } from "@/app/components";
 import useGsapStagger from "@/utils/useGsapStagger";
-import { Container, Flex, Tooltip } from "@radix-ui/themes";
+import { Box, Container, Flex, Tooltip } from "@radix-ui/themes";
 import { useState } from "react";
 
 import {
@@ -72,7 +72,7 @@ const SkillsSection = () => {
   useGsapStagger({ className: ".skillIcon", delay: 0.25, amount: 3 });
 
   return (
-    <Container className="mx-8 md:mx-4">
+    <Container className="relative mx-8 md:mx-4">
       <Flex justify="center" align="center" direction="column">
         <Badge color="#9b00ff" text="Tech Stack" />
         <SectionHeading text="Skills &" highlight="Tools" inline />
@@ -317,6 +317,7 @@ const SkillsSection = () => {
           </Tooltip>
         </Flex>
       </Flex>
+      <Box className="absolute -right-40 -top-12 h-[20rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
     </Container>
   );
 };

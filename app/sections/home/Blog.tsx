@@ -1,10 +1,10 @@
-import { Container, Flex } from "@radix-ui/themes";
+import { Box, Container, Flex } from "@radix-ui/themes";
 import { Badge, SectionHeading, BlogCard } from "@/app/components";
 import blogData from "@/data/blogs";
 
 const BlogSection = () => {
   return (
-    <Container className="mx-4 md:mx-4">
+    <Container className="relative mx-4 md:mx-4">
       <Flex
         justify="center"
         align="center"
@@ -19,6 +19,7 @@ const BlogSection = () => {
           ))}
         </Flex>
       </Flex>
+      <Box className="-bottom-58 absolute -right-40 h-[25rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
     </Container>
   );
 };

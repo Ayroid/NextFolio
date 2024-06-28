@@ -11,10 +11,10 @@ import { Badge, LinkButton, SectionHeading } from "../../components";
 const ExperienceSection = () => {
   const opportunityIconRef = useRef<HTMLDivElement>(null);
 
-  useGsapAnimation({ref: opportunityIconRef});
+  useGsapAnimation({ ref: opportunityIconRef });
 
   return (
-    <Container className="mx-8 md:mx-4">
+    <Container className="relative mx-8 md:mx-4">
       <Flex justify="center" align="start" direction="column">
         <Badge color="#ffcd95" text="Carrer" />
         <SectionHeading text="Work" highlight="Experience" inline />
@@ -50,6 +50,8 @@ const ExperienceSection = () => {
           </Flex>
         </Flex>
       </Flex>
+      <Box className="absolute -left-52 -top-24 h-[20rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
+      <Box className="absolute -bottom-80 -right-40 h-[25rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
     </Container>
   );
 };

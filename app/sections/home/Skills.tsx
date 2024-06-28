@@ -2,7 +2,7 @@
 
 import { Badge, SectionHeading } from "@/app/components";
 import useGsapStagger from "@/utils/useGsapStagger";
-import { Container, Flex, Tooltip } from "@radix-ui/themes";
+import { Container, Flex, Tooltip, Box } from "@radix-ui/themes";
 
 import {
   BiLogoAws,
@@ -53,7 +53,12 @@ const SkillsSection = () => {
 
   return (
     <Container className="mx-8 md:mx-4">
-      <Flex justify="center" align="center" direction="column">
+      <Flex
+        justify="center"
+        align="center"
+        direction="column"
+        className="relative"
+      >
         <Badge color="#9b00ff" text="Tech Stack" />
         <SectionHeading text="Skills &" highlight="Tools" inline />
         <Flex
@@ -214,6 +219,7 @@ const SkillsSection = () => {
             <BiLogoFigma className="skillIcon size-14 cursor-pointer md:size-[4.2rem]" />
           </Tooltip>
         </Flex>
+        <Box className="absolute -left-40 top-0 h-[25rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
       </Flex>
     </Container>
   );

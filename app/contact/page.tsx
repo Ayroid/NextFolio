@@ -13,10 +13,22 @@ import { MdPhone } from "react-icons/md";
 const ContactPage = () => {
   return (
     <Container className="bg-dark py-32 md:py-24">
-      <Flex justify="center" align="center" direction="column">
+      <Flex
+        justify="center"
+        align="center"
+        direction="column"
+        className="relative mx-8 md:mx-4"
+      >
         <Badge text="Contact" color="#e3b785" />
         <SectionHeading text="Contact" highlight="me" inline textCenter />
-        <Flex gap="5" justify="center" align="center" direction="column" mx="5">
+        <Flex
+          gap="5"
+          justify="center"
+          align="center"
+          direction="column"
+          mx="5"
+          className="relative"
+        >
           <Flex gap="5" justify="center" align="center" wrap="wrap">
             <ContactCard
               title="Mail"
@@ -30,7 +42,10 @@ const ContactPage = () => {
             />
           </Flex>
           <ContactForm />
+          <Box className="absolute -bottom-64 -right-96 h-[20rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
         </Flex>
+        <Box className="absolute -right-52 -top-80 h-[20rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
+        <Box className="absolute -left-52 top-20 h-[25rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
       </Flex>
       <Box className="fixed bottom-20 right-20">
         <BackToTop />

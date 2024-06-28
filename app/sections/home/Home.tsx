@@ -22,7 +22,7 @@ const HomeSection = () => {
       align="center"
       direction="column"
       gap="5"
-      className="h-home-page-initial py-24 md:h-home-page-md"
+      className="relative h-home-page-initial py-24 md:h-home-page-md"
     >
       <Flex direction="column" align="center" gap="3" ref={avatarRef}>
         <Avatar />
@@ -80,6 +80,8 @@ const HomeSection = () => {
       <Box mt="4" ref={buttonRef}>
         <LinkButton link="/contact" text="Get in Touch" />
       </Box>
+      <Box className="absolute -right-52 -top-52 h-[20rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
+      <Box className="absolute -bottom-[26rem] -left-52 h-[25rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
     </Flex>
   );
 };

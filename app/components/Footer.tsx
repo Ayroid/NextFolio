@@ -1,19 +1,15 @@
 "use client";
 
-import { Box, Container, Flex } from "@radix-ui/themes";
 import {
   LinkButton,
   SectionHeading,
   SocialMediaLinks,
 } from "@/app/components/";
-import useGsapAnimation from "@/utils/useGsapAnimation";
-import { useRef } from "react";
+import { Container, Flex } from "@radix-ui/themes";
+
+
 
 const Footer = () => {
-  const buttonRef = useRef<HTMLDivElement>(null);
-
-  useGsapAnimation({ref: buttonRef});
-
   return (
     <Container className="bg-dark">
       <Flex
@@ -24,7 +20,7 @@ const Footer = () => {
           md: "row",
         }}
         gap="5"
-        className="min-h-80 w-full border-t-[1px] border-radix-accent p-12"
+        className="relative min-h-80 w-full border-t-[1px] border-radix-accent p-12"
       >
         <Flex
           direction="column"
@@ -37,9 +33,9 @@ const Footer = () => {
             highlight="Let's Connect"
             textCenter
           />
-          <Box ref={buttonRef}>
-            <LinkButton link="/contact" text="Contact me" />
-          </Box>
+
+          <LinkButton link="/contact" text="Contact me" />
+
           <SocialMediaLinks />
         </Flex>
       </Flex>

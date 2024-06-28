@@ -29,7 +29,7 @@ export default function RootLayout({
       </head>
       <body className={inter.variable}>
         <Theme accentColor="violet" radius="small" appearance="dark">
-          <main>
+          <main className="overflow-x-clip">
             <Navbar />
             {children}
             <Footer />

@@ -1,9 +1,9 @@
-import { Container, Flex } from "@radix-ui/themes";
+import { Box, Container, Flex } from "@radix-ui/themes";
 import { Badge, ExperienceCard, SectionHeading } from "@/app/components";
 
 const EducationSection = () => {
   return (
-    <Container className="mx-8 md:mx-4">
+    <Container className="relative mx-8 md:mx-4">
       <Flex justify="center" align="start" direction="column">
         <Badge color="#ffcd95" text="Academics" />
         <SectionHeading highlight="Education" inline />
@@ -47,6 +47,7 @@ const EducationSection = () => {
           />
         </Flex>
       </Flex>
+      <Box className="absolute -left-52 -top-52 h-[20rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
     </Container>
   );
 };

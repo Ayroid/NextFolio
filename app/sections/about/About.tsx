@@ -10,10 +10,10 @@ import { SectionHeading } from "../../components";
 const AboutSection = () => {
   const imageRef = useRef<HTMLImageElement>(null);
 
-  useGsapAnimation({ref: imageRef});
+  useGsapAnimation({ ref: imageRef });
 
   return (
-    <Container className="mx-8 md:mx-4">
+    <Container className="relative mx-8 md:mx-4">
       <Flex
         justify="center"
         align="start"
@@ -44,6 +44,7 @@ const AboutSection = () => {
           </Text>
         </Box>
       </Flex>
+      <Box className="absolute -right-52 -top-80 h-[20rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
     </Container>
   );
 };
