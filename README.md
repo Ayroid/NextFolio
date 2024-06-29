@@ -1,7 +1,3 @@
-Here's an updated `README.md` for the NextFolio project, incorporating details about dependencies and focusing on its purpose as a personal portfolio website:
-
----
-
 # NextFolio
 
 NextFolio is a modern, responsive, and customizable personal portfolio website built with Next.js, TypeScript, and Tailwind CSS. This project helps you showcase your work, skills, and experience effectively.
