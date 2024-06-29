@@ -4,7 +4,7 @@ NextFolio is a modern, responsive, and customizable personal portfolio website b
 
 ## Live View
 
-Check out the live version of the portfolio at [ayroid.vercel.app](ayroid.vercel.app).
+Check out the live version of the portfolio at [https://ayroid.vercel.app](https://ayroid.vercel.app).
 
 ## Features
 
