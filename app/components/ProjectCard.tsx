@@ -21,7 +21,7 @@ interface Props {
   category: string;
   title: string;
   description: string;
-  techStack: string;
+  techStackText: string;
   githublink?: { link: string; content: string }[];
   demolink?: string;
   desclink: string;
@@ -34,7 +34,7 @@ const ProjectCard = ({
   category,
   title,
   description,
-  techStack,
+  techStackText,
   githublink,
   demolink,
   desclink,
@@ -81,7 +81,8 @@ const ProjectCard = ({
             </Heading>
             <Text className="text-lg text-gray-accent">{description}</Text>
             <Box className="text-lg text-gray-accent">
-              <Strong className="text-white">Tech Stack:</Strong> {techStack}
+              <Strong className="text-white">Tech Stack:</Strong>{" "}
+              {techStackText}
             </Box>
           </Flex>
           <Flex mt="5" align="center">

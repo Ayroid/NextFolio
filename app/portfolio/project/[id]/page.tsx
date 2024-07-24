@@ -4,7 +4,7 @@ import {
   SectionHeading,
   SubSectionHeading,
 } from "@/app/components";
-import individualProjectData from "@/data/individualProject";
+import individualProjectData from "@/data/projects";
 import { Box, Container, Flex, Text } from "@radix-ui/themes";
 import { Metadata } from "next";
 import Image from "next/image";
