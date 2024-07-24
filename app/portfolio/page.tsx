@@ -54,7 +54,14 @@ const PortfolioPage = () => {
           itemValueMap={itemValueMap}
           columnCount={{ initial: "1", sm: "3" }}
         />
-        <Flex direction="column" justify="center" align="center" gap="8" my="5">
+        <Flex
+          direction="column"
+          justify="center"
+          align="center"
+          gap="8"
+          my="5"
+          className="z-50"
+        >
           {projectData.map((project) => (
             <ProjectCard
               key={project.title}
@@ -79,7 +86,7 @@ const PortfolioPage = () => {
             highlight="awesome projects!"
             textCenter
           />
-          <Box className="absolute -left-96 -top-64 z-10 h-[20rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
+          <Box className="absolute -left-96 -top-64 -z-20 h-[20rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
           <Box className="absolute -bottom-64 -right-96 z-10 h-[20rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
         </Flex>
         <Box className="absolute -right-52 -top-80 z-10 h-[20rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>

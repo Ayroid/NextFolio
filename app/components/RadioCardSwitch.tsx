@@ -22,7 +22,7 @@ const RadioCardSwitch = ({
   useGsapAnimation({ref: radioCardRef});
 
   return (
-    <Flex className="-mt-5 mb-10 max-w-full" ref={radioCardRef}>
+    <Flex className="-mt-5 mb-10 max-w-full z-50" ref={radioCardRef}>
       <RadioCards.Root
         value={activeCategory}
         onValueChange={(value) => changeCategory(value)}
