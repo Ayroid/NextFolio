@@ -5,6 +5,7 @@ export { default as BadgeCategory } from "./BadgeCategory";
 export { default as BlogCard } from "./BlogCard";
 export { default as ContactCard } from "./ContactCard";
 export { default as ContactForm } from "./ContactForm";
+export { default as DescriptionText } from "./DescriptionText";
 export { default as ExperienceCard } from "./ExperienceCard";
 export { default as Footer } from "./Footer";
 export { default as FormErrorMessage } from "./FormErrorMessage";

@@ -1,6 +1,7 @@
 import {
   BackToTop,
   Badge,
+  DescriptionText,
   SectionHeading,
   SubSectionHeading,
 } from "@/app/components";
@@ -49,19 +50,13 @@ const IndividualProjectPage = ({ params: { id } }: Props) => {
           />
         </Box>
         <SubSectionHeading text="Project Overview" inline />
-        <Text className="mb-8 text-lg text-gray-accent">
-          {data.projectOverview}
-        </Text>
+        <DescriptionText text={data.projectOverview} />
 
         <SubSectionHeading text="Project Execution" inline />
-        <Text className="mb-8 text-lg text-gray-accent">
-          {data.projectExecution}
-        </Text>
+        <DescriptionText text={data.projectExecution} />
 
         <SubSectionHeading text="Results" inline />
-        <Text className="mb-8 text-lg text-gray-accent">
-          {data.projectExecution}
-        </Text>
+        <DescriptionText text={data.projectExecution} />
       </Flex>
       <Box className="fixed bottom-20 right-20">
         <BackToTop />

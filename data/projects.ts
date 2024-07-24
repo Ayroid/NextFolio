@@ -141,7 +141,7 @@ const projectData = [
       },
     ],
     desclink: "/portfolio/project/terraform-ec2",
-    techStack: ["TerraformTooltip", "AWSTooltip", "GitHubTooltip"],
+    techStack: [TerraformTooltip, AWSTooltip, GithubTooltip],
     timeperiod: "Jan 2024 - Mar 2024",
     highlighted: true,
   },
