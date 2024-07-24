@@ -47,8 +47,8 @@ const ProjectCard = ({
 
   return (
     <Container
-      className={`${isVisible ? "block" : "hidden"}`}
       ref={projectCardRef}
+      style={{ display: isVisible ? "block" : "none" }}
     >
       <Flex
         gap="8"

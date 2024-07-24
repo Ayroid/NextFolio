@@ -14,23 +14,25 @@ import { useState } from "react";
 import { TbTools } from "react-icons/tb";
 
 const PortfolioPage = () => {
-  const [categorySelected, setCategorySelected] = useState("Highlighted");
+  const [projectCategorySelected, setProjectCategorySelected] =
+    useState("Highlighted");
 
   const handleCategoryChange = (category: string) => {
-    setCategorySelected(category);
+    setProjectCategorySelected(category);
   };
 
   const isVisible = (categories: string[]) => {
-    return categories.includes(categorySelected) || categorySelected === "All";
+    return (
+      categories.includes(projectCategorySelected) ||
+      projectCategorySelected === "All"
+    );
   };
 
   const itemValueMap = [
     { value: "All", text: "All" },
     { value: "Highlighted", text: "Highlighted" },
-    // { value: "Frontend", text: "Frontend" },
-    // { value: "Backend", text: "Backend" },
     { value: "Full Stack", text: "Full Stack" },
-    // { value: "DevOps", text: "DevOps" },
+    { value: "DevOps", text: "DevOps" },
   ];
 
   return (
@@ -49,10 +51,10 @@ const PortfolioPage = () => {
           inline
         />
         <RadioCardSwitch
-          activeCategory={categorySelected}
+          activeCategory={projectCategorySelected}
           changeCategory={handleCategoryChange}
           itemValueMap={itemValueMap}
-          columnCount={{ initial: "1", sm: "3" }}
+          columnCount={{ initial: "1", sm: "4" }}
         />
         <Flex
           direction="column"

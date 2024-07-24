@@ -80,8 +80,8 @@ const projectData = [
   },
   {
     image: UPESCSA,
-    category: "Full Stack",
     pageurl: "upescsa",
+    category: "Full Stack",
     title: "UPES CSA - Official Website",
     description:
       "The official website of UPES CSA, a student organization at UPES, Dehradun. It serves as a platform to showcase the organization's activities, events, and achievements. Event Registration and Management system with automated mailings has been integrated to streamline the process.",
@@ -133,7 +133,6 @@ const projectData = [
       "Executed between January 2024 and March 2024, this project utilized Terraform to deploy an EC2 instance within a custom VPC. The configurations are organized into several branches, each highlighting specific features such as custom modules, existing modules from the Terraform Registry, and remote state management. The infrastructure includes VPC, subnets, an Internet Gateway, route tables, security groups, a key pair, and an EC2 instance. Best practices followed include modular configuration for reusability, remote state storage in an S3 bucket for collaborative state management, and use of variables and output values for flexibility and clarity. The project was set up to streamline the deployment process and can be extended to include additional resources like RDS or S3.",
     projectResult:
       "The Terraform EC2 Project successfully automated the deployment of an EC2 instance and associated infrastructure within a custom VPC. The modular approach and remote state management facilitated effective collaboration and maintained flexibility. Key outcomes include the creation of a VPC, subnets, an Internet Gateway, route tables, security groups, and an EC2 instance, with proper resource tagging and output values to aid in management. The project illustrates how Terraform can be used to manage infrastructure efficiently, with potential for extension to additional AWS resources. The configuration files and usage instructions are available in the [GitHub repository](https://github.com/Ayroid/terraform-ec2-project).",
-    demolink: "https://github.com/Ayroid/terraform-ec2-project",
     githublink: [
       {
         link: "https://github.com/Ayroid/terraform-ec2-project",
@@ -141,9 +140,10 @@ const projectData = [
       },
     ],
     desclink: "/portfolio/project/terraform-ec2",
+    techStackText: "Terraform, AWS & Github.",
     techStack: [TerraformTooltip, AWSTooltip, GithubTooltip],
-    timeperiod: "Jan 2024 - Mar 2024",
-    highlighted: true,
+    timeperiod: "July 2024",
+    highlighted: false,
   },
 ];
 
