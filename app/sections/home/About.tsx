@@ -1,6 +1,6 @@
 "use client";
 
-import ProfilePic from "@/public/images/profile/profile.png";
+import ProfilePic from "@/public/images/profile/profilehq.png";
 import useGsapAnimation from "@/utils/useGsapAnimation";
 import { Box, Code, Container, Flex, Text } from "@radix-ui/themes";
 import Image from "next/image";
@@ -29,6 +29,7 @@ const AboutSection = () => {
           alt="profile"
           className="rounded-3xl"
           ref={imageRef}
+          height={533}
         />
         <Box>
           <Badge color="#ffcd95" text="Open to Work" />
