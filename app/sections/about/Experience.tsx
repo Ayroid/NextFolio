@@ -40,7 +40,7 @@ const ExperienceSection = () => {
               className="rounded-lg border-[1px] border-zinc-800"
             />
             <Link
-              href="https://drive.google.com/file/d/1NHGjGAnMKICQkJ9BqcvJtb2-eu6pY-Gj/view?usp=sharing"
+              href="https://drive.google.com/file/d/1fHaOMF-R1XSbnqlb7ZBJ2u4zN6Zko_RS/view?usp=sharing"
               target="_blank"
             >
               <Tooltip content="Resume">

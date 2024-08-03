@@ -147,7 +147,7 @@ const projectData = [
     techStackText: "Terraform, AWS & Github.",
     techStack: [TerraformTooltip, AWSTooltip, GithubTooltip],
     timeperiod: "July 2024",
-    highlighted: false,
+    highlighted: true,
   },
 ];
 
