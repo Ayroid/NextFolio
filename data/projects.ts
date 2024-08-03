@@ -58,11 +58,15 @@ const projectData = [
       "Visual Rift, a full-stack microservices orchestration engine, was meticulously developed to address the complexities of multi-cloud application deployment. Initiated in January 2024, the project utilized Next.js for a responsive front-end experience, MongoDB for scalable database management, and TailwindCSS for modern, customizable styling. Radix UI and ShadcnUI were integrated to enhance the user interface with advanced component libraries. The project features an intuitive UML diagram-based interface to simplify the deployment of microservices and streamline complex configurations. Currently ongoing, Visual Rift demonstrates a commitment to optimizing workflow efficiency and managing microservices effectively across various cloud environments. The project is hosted at Visual Rift Studio and the GitHub repository can be accessed here.",
     projectResult:
       "Visual Rift successfully achieved its goal of simplifying multi-cloud application deployments through its innovative use of UML diagrams. By offering a user-friendly interface and efficient microservices management, the project significantly reduced the complexity of configuring and deploying applications across different cloud environments. The integration of Next.js, MongoDB, TailwindCSS, Radix UI, and ShadcnUI ensured a seamless, modern user experience and robust backend performance. The tool's current deployment at Visual Rift Studio and its GitHub repository demonstrate its effectiveness in enhancing workflow efficiency and managing microservices with ease. As the project is ongoing, it continues to evolve, with ongoing updates aimed at expanding its functionality and improving user satisfaction.",
-    demolink: "https://visualrift.studio",
+    // demolink: "https://visualrift.studio",
     githublink: [
       {
-        link: "https://github.com/ayroid",
-        content: "Github Repository",
+        link: "https://github.com/Visual-Rift/Visual-Rift-Client",
+        content: "Frontend Repository",
+      },
+      {
+        link: "https://github.com/Visual-Rift/Visual-Rift-Server",
+        content: "Backend Repository",
       },
     ],
     desclink: "/portfolio/project/visualrift",
