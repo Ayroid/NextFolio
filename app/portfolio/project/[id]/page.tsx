@@ -2,13 +2,16 @@ import {
   BackToTop,
   Badge,
   DescriptionText,
+  LinkButton,
   SectionHeading,
   SubSectionHeading,
 } from "@/app/components";
 import individualProjectData from "@/data/projects";
-import { Box, Container, Flex, Text } from "@radix-ui/themes";
+import { Box, Container, Flex, Text, Tooltip } from "@radix-ui/themes";
 import { Metadata } from "next";
 import Image from "next/image";
+import { FiExternalLink } from "react-icons/fi";
+import { SiGithub } from "react-icons/si";
 
 interface Props {
   params: {
@@ -37,10 +40,33 @@ const IndividualProjectPage = ({ params: { id } }: Props) => {
         </Flex>
 
         <SectionHeading text={data.title} inline />
+
         <Flex className="gap-1" align="center" justify="start">
           {data.techStack.map((SkillIcon, index) => (
             <SkillIcon key={index} />
           ))}
+        </Flex>
+
+        <Flex mt="6" align="center">
+          <Text className="mt-1 text-2xl font-semibold text-[#9b00ff]">
+            Important Links 🡢
+          </Text>
+          <Flex align="center" className="ml-3 gap-3 md:ml-5 md:gap-5">
+            {data.githublink?.map((repository) => (
+              <Tooltip key={repository.link} content={repository.content}>
+                <a href={repository.link} target="_blank">
+                  {<SiGithub size="30" />}
+                </a>
+              </Tooltip>
+            ))}
+            {data.demolink && (
+              <Tooltip content="Live Demo">
+                <a href={data.demolink} target="_blank">
+                  {<FiExternalLink size="30" />}
+                </a>
+              </Tooltip>
+            )}
+          </Flex>
         </Flex>
         <Box className="mb-20 mt-16 rounded-xl">
           <Image
@@ -56,7 +82,7 @@ const IndividualProjectPage = ({ params: { id } }: Props) => {
         <DescriptionText text={data.projectExecution} />
 
         <SubSectionHeading text="Results" inline />
-        <DescriptionText text={data.projectExecution} />
+        <DescriptionText text={data.projectResult} />
       </Flex>
       <Box className="fixed bottom-20 right-20">
         <BackToTop />

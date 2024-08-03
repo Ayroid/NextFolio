@@ -69,7 +69,7 @@ const ExperienceSection = () => {
             ]}
             designation="PWC Analyst Launchpad Trainee"
             experienceLevel="Industry"
-            duration="02/2024 - 06/2024"
+            duration="Feb 2024 - Jun 2024"
           />
           <ExperienceCard
             instituteName="Ananta Khushiyaan Foundation"
@@ -80,7 +80,7 @@ const ExperienceSection = () => {
             ]}
             designation="Technical Education Intern"
             experienceLevel="Industry"
-            duration=" 06/2022 - 08/2022"
+            duration="Jun 2022 - July 2022"
             reverse
             last
           />

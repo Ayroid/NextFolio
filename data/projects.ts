@@ -1,6 +1,7 @@
 import UPESCSA from "@/public/images/projects/upescsa.jpg";
 import VisualRift from "@/public/images/projects/visualrift.jpg";
 import Terraform from "@/public/images/projects/terraform.jpg";
+import Parko from "@/public/images/projects/parko.jpg";
 import { SkillIcons } from "@/app/components";
 
 const {
@@ -122,6 +123,47 @@ const projectData = [
       GithubActionsTooltip,
     ],
     timeperiod: "Dec 2023 - Jan 2023",
+    highlighted: false,
+  },
+  {
+    image: Parko,
+    pageurl: "parko",
+    category: "Full Stack",
+    title: "Parko - Complete Parking Solution",
+    description:
+      "Parko is an innovative application designed to revolutionize the parking experience at UPES. The frontend of this application provides a user-friendly interface for users to check real-time parking availability, pre-book spots, and navigate to their allocated parking space.",
+    projectOverview:
+      "Parko is a full-stack project aimed at enhancing the parking experience at UPES. Built with ReactJS, ExpressJS, NodeJS, MongoDB, AWS, Docker, and Nginx, Parko provides a modern solution for parking management. The application features real-time parking availability, spot reservation, and navigation functionalities, all accessible through a seamless user interface. Developed from August 2023 to November 2023, Parko represents a practical application of web technologies to address real-world challenges in parking management.",
+    projectExecution:
+      "Executed between August 2023 and November 2023, Parko was developed using ReactJS for a responsive front-end, ExpressJS and NodeJS for the backend, and MongoDB for database management. AWS and Docker were utilized for deployment, with Nginx as the web server. The project includes functionalities for checking real-time parking availability, pre-booking spots, and navigating to parking locations. The use of modern technologies ensured a user-friendly experience and efficient parking management. Parko's GitHub repositories are available for review and ongoing updates.",
+    projectResult:
+      "Parko was successful in enhancing parking experience at UPES by providing an intuitive platform for managing parking spaces. The integration of ReactJS, ExpressJS, NodeJS, and MongoDB created a robust and responsive application. The deployment on AWS with Docker and Nginx ensured high performance and reliability. The project effectively addressed the need for real-time parking management and spot reservation. The source code and documentation are accessible in the GitHub repository",
+    githublink: [
+      {
+        link: "https://github.com/Ayroid/PARKO-Frontend",
+        content: "Frontend Repository",
+      },
+      {
+        link: "https://github.com/Ayroid/PARKO-Backend",
+        content: "Backend Repository",
+      },
+    ],
+    desclink: "/portfolio/project/parko",
+    techStackText:
+      "ReactJS, ExpressJS, NodeJS, MongoDB, AWS, Docker, Nginx & Postman",
+    techStack: [
+      MongoDBTooltip,
+      ExpressTooltip,
+      ReactTooltip,
+      NodeJSTooltip,
+      AWSTooltip,
+      DockerTooltip,
+      NginxTooltip,
+      GithubTooltip,
+      GithubActionsTooltip,
+      PostmanTooltip,
+    ],
+    timeperiod: "Aug 2023 - Nov 2023",
     highlighted: true,
   },
   {
