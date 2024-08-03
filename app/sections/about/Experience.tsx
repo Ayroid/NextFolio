@@ -6,7 +6,12 @@ import Link from "next/link";
 import { useRef } from "react";
 import { TbListSearch } from "react-icons/tb";
 import { TiDocumentText } from "react-icons/ti";
-import { Badge, LinkButton, SectionHeading } from "../../components";
+import {
+  Badge,
+  ExperienceCard,
+  LinkButton,
+  SectionHeading,
+} from "@/app/components";
 
 const ExperienceSection = () => {
   const opportunityIconRef = useRef<HTMLDivElement>(null);
@@ -48,6 +53,37 @@ const ExperienceSection = () => {
               </Tooltip>
             </Link>
           </Flex>
+        </Flex>
+        <Flex
+          justify="center"
+          align="center"
+          direction="column"
+          className="relative z-20 mt-20 w-full"
+        >
+          <ExperienceCard
+            instituteName="PWC India"
+            location="Remote"
+            description={[
+              "Completed micro-certifications in IT Fundamentals, DBMS, Python programming, and Data Analytics using Python.",
+              "Gained hands-on experience in IT concepts, relational databases, and data analysis,  to solve problems and interpret data effectively.",
+            ]}
+            designation="PWC Analyst Launchpad Trainee"
+            experienceLevel="Industry"
+            duration="02/2024 - 06/2024"
+          />
+          <ExperienceCard
+            instituteName="Ananta Khushiyaan Foundation"
+            location="Dehradun, India"
+            description={[
+              "Led a team of 13 interns, managing records for children and adults enrolled in the NGO's educational programs.",
+              "Taught Python programming to students of class 9 to 12, enhancing digital literacy.",
+            ]}
+            designation="Technical Education Intern"
+            experienceLevel="Industry"
+            duration=" 06/2022 - 08/2022"
+            reverse
+            last
+          />
         </Flex>
       </Flex>
       <Box className="absolute -left-52 -top-24 z-10 h-[20rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>

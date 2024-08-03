@@ -1,20 +1,21 @@
 "use client";
 
 import { Box, Flex, Heading, Separator, Text } from "@radix-ui/themes";
-import { LuSchool } from "react-icons/lu";
+import { LuBuilding2, LuSchool } from "react-icons/lu";
 import { FaUniversity } from "react-icons/fa";
 import { useRef } from "react";
 import useGsapAnimation from "@/utils/useGsapAnimation";
 
 interface Props {
-  instituteName: string;
-  course: string;
-  specialization: string;
-  yearOfStudy: string;
-  designation: string;
-  location: string;
-  result: string;
-  educationLevel: "College" | "School";
+  instituteName?: string;
+  course?: string;
+  specialization?: string;
+  description?: string[];
+  duration?: string;
+  designation?: string;
+  location?: string;
+  result?: string;
+  experienceLevel?: "College" | "School" | "Industry";
   reverse?: boolean;
   last?: boolean;
 }
@@ -23,16 +24,23 @@ const ExperienceCard = ({
   instituteName,
   course,
   specialization,
-  yearOfStudy,
+  description,
+  duration,
   designation,
   location,
   result,
-  educationLevel,
+  experienceLevel,
   reverse = false,
   last = false,
 }: Props) => {
   const experienceCardRef = useRef<HTMLDivElement>(null);
-  useGsapAnimation({ref: experienceCardRef});
+  useGsapAnimation({ ref: experienceCardRef });
+
+  const experienceLevelMap = {
+    Industry: <LuBuilding2 className="inline size-7" />,
+    College: <FaUniversity className="inline size-7" />,
+    School: <LuSchool className="inline size-7" />,
+  };
 
   return (
     <Flex
@@ -47,7 +55,7 @@ const ExperienceCard = ({
           size="6"
           className={`w-full text-left ${reverse ? "lg:text-left" : "lg:text-right"}`}
         >
-          {yearOfStudy}
+          {duration}
         </Heading>
         <Text
           size="3"
@@ -74,12 +82,8 @@ const ExperienceCard = ({
         ref={experienceCardRef}
       >
         <Flex direction="column">
-          <Flex align="start" gap="4">
-            {educationLevel == "College" ? (
-              <FaUniversity className="inline size-9 md:size-12" />
-            ) : (
-              <LuSchool className="inline size-9 md:size-12" />
-            )}
+          <Flex align="start" gap="3">
+            <Text>{experienceLevelMap[experienceLevel!]}</Text>
             <Heading size="5" className="inline">
               {instituteName},{" "}
               <Text size="3" className="text-gray-accent">
@@ -93,6 +97,15 @@ const ExperienceCard = ({
           <Text size="3" className="italic text-gray-accent">
             {specialization}
           </Text>
+          {description && (
+            <Text size="3" className="text-gray-accent">
+              <ul>
+                {description.map((desc, index) => (
+                  <li key={index}>• {desc}</li>
+                ))}
+              </ul>
+            </Text>
+          )}
         </Flex>
         <Text size="3" className="font-semibold italic text-gray-accent">
           {result}

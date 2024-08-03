@@ -20,18 +20,18 @@ const EducationSection = () => {
             specialization="Specialization in DevOps"
             designation="Undergraduate Student"
             result="CGPA - 8.78"
-            educationLevel="College"
-            yearOfStudy="2021 - 2025"
+            experienceLevel="College"
+            duration="2021 - 2025"
           />
           <ExperienceCard
             instituteName="Carman Residential and Day School"
             location="Dehradun, India"
             course="Class XII"
             specialization="PCM with Computer Science"
-            designation="Student"
+            designation="Higher Secondary School Student"
             result="Percentage - 91.75%"
-            educationLevel="School"
-            yearOfStudy="2019 - 2020"
+            experienceLevel="School"
+            duration="2019 - 2020"
             reverse
           />
           <ExperienceCard
@@ -40,9 +40,9 @@ const EducationSection = () => {
             course="Class X"
             specialization="PCM with Computer Science"
             result="Percentage - 85.2%"
-            designation="Student"
-            educationLevel="School"
-            yearOfStudy="2017 - 2018"
+            designation="Secondary School Student"
+            experienceLevel="School"
+            duration="2017 - 2018"
             last
           />
         </Flex>
