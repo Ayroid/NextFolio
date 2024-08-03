@@ -1,8 +1,20 @@
 import NextjsVsReact from "@/public/images/blogs/nextjsVsReact.jpeg";
 import ConventionalCommits from "@/public/images/blogs/conventionalCommits.jpeg";
 import DockerizeMERN from "@/public/images/blogs/dockerizeMERN.jpeg";
+import TerraformEC2 from "@/public/images/blogs/terraformEC2.jpg";
 
 const blogData = [
+  {
+    imageurl: TerraformEC2,
+    category: "DevOps",
+    title:
+      "Provision and Manage AWS Infrastructure with Terraform - Infrastructure as Code",
+    description:
+      "Learn to  use Terraform efficiently and provision and manage resources on AWS. Streamline and manage your infrastructure.",
+    link: "https://ayroid.hashnode.dev/build-and-manage-aws-infrastructure-with-terraform",
+    date: "3 Aug 2024",
+    highlighted: true,
+  },
   {
     imageurl: NextjsVsReact,
     category: "Development",
