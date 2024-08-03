@@ -80,7 +80,7 @@ const HomeSection = () => {
       <Box mt="4" ref={buttonRef}>
         <LinkButton link="/contact" text="Get in Touch" />
       </Box>
-      <Box className="absolute -right-52 -top-52 z-10 h-[20rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
+      <Box className="absolute -right-52 -top-10 -z-50 h-[20rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
       <Box className="absolute -bottom-[26rem] -left-52 z-10 h-[25rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
     </Flex>
   );

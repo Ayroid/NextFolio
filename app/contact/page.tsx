@@ -45,7 +45,7 @@ const ContactPage = () => {
           <ContactForm />
           <Box className="absolute -bottom-64 -right-96 z-10 h-[20rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
         </Flex>
-        <Box className="absolute -right-52 -top-80 z-10 h-[20rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
+        <Box className="absolute -right-52 -top-32 z-10 h-[20rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
         <Box className="absolute -left-52 top-20 z-10 h-[25rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
       </Flex>
       <Box className="fixed bottom-20 right-20">
