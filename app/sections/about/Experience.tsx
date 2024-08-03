@@ -1,7 +1,14 @@
 "use client";
 
 import useGsapAnimation from "@/utils/useGsapAnimation";
-import { Box, Container, Flex, Separator, Tooltip } from "@radix-ui/themes";
+import {
+  Box,
+  Button,
+  Container,
+  Flex,
+  Separator,
+  Tooltip,
+} from "@radix-ui/themes";
 import Link from "next/link";
 import { useRef } from "react";
 import { TbListSearch } from "react-icons/tb";
@@ -37,22 +44,19 @@ const ExperienceSection = () => {
             highlight="Opportunities"
             textCenter
           />
-          <Flex justify="center" align="center" gap="5">
-            <LinkButton link="/contact" text="Hire Me" />
-            <Separator
-              orientation="vertical"
+          <Link
+            href="https://drive.google.com/file/d/1LT-lb-4-TzRcgM4LNV2u4HRY9fpRPxTn/view?usp=sharing"
+            target="_blank"
+          >
+            <Button
+              radius="full"
               size="4"
-              className="rounded-lg border-[1px] border-zinc-800"
-            />
-            <Link
-              href="https://drive.google.com/file/d/1fHaOMF-R1XSbnqlb7ZBJ2u4zN6Zko_RS/view?usp=sharing"
-              target="_blank"
+              variant="soft"
+              className="font-bold hover:cursor-pointer"
             >
-              <Tooltip content="Resume">
-                <TiDocumentText className="size-8 animate-moveUp md:size-10" />
-              </Tooltip>
-            </Link>
-          </Flex>
+              Download Resume <TiDocumentText />
+            </Button>
+          </Link>
         </Flex>
         <Flex
           justify="center"

@@ -1,6 +1,6 @@
 "use client";
 
-import ProfilePic from "@/public/images/profile/profile-crop.jpg";
+import ProfilePic from "@/public/images/profile/profile.png";
 import useGsapAnimation from "@/utils/useGsapAnimation";
 import { Box, Code, Container, Flex, Text } from "@radix-ui/themes";
 import Image from "next/image";
