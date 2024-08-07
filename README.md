@@ -24,8 +24,8 @@ Ensure you have the following installed:
 - Node.js (v14 or later)
 - npm, yarn, pnpm, or bun (choose one package manager)
 
-### Installation
-
+### steps
+ss
 1. Clone the repository:
 
     ```bash
