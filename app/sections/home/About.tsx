@@ -2,10 +2,19 @@
 
 import ProfilePic from "@/public/images/profile/profilehq.png";
 import useGsapAnimation from "@/utils/useGsapAnimation";
-import { Box, Code, Container, Flex, Text } from "@radix-ui/themes";
+import {
+  Box,
+  Button,
+  Code,
+  Container,
+  Flex,
+  Link,
+  Text,
+} from "@radix-ui/themes";
 import Image from "next/image";
 import { useRef } from "react";
 import { Badge, LinkButton, SectionHeading } from "../../components";
+import { TiDocumentText } from "react-icons/ti";
 
 const AboutSection = () => {
   const imageRef = useRef<HTMLImageElement>(null);
@@ -56,12 +65,27 @@ const AboutSection = () => {
           <Flex
             mt="8"
             justify={{
-              initial: "center",
+              initial: "start",
               md: "start",
             }}
             ref={buttonRef}
+            gap="4"
+            wrap="wrap"
           >
             <LinkButton link="/about" text="Discover More" />
+            <Link
+              href="https://drive.google.com/file/d/1LT-lb-4-TzRcgM4LNV2u4HRY9fpRPxTn/view?usp=sharing"
+              target="_blank"
+            >
+              <Button
+                radius="full"
+                size="4"
+                variant="soft"
+                className="font-bold hover:cursor-pointer"
+              >
+                Download Resume <TiDocumentText />
+              </Button>
+            </Link>
           </Flex>
         </Box>
         <Box className="absolute -right-40 bottom-[26rem] z-10 h-[25rem] w-[30rem] rounded-full bg-radix-accent opacity-20 blur-[96px]"></Box>
